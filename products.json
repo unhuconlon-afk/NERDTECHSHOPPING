@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "name": "PC GVN Intel i5-12400F/ VGA RTX 3050",
+    "price": 15890000,
+    "originalPrice": 17330000,
+    "image": "assets/images/1.jpg",
+    "description": "Powerful gaming PC with Intel i5-12400F CPU and RTX 3050 graphics for smooth 1080p gaming.",
+    "stock": 5,
+    "category": "pc",
+    "specs": ["i5 12400F", "RTX 3050", "B760", "16GB RAM", "256GB SSD"]
+  },
+  {
+    "id": 2,
+    "name": "PC GVN Intel i3-12100F/ GTX 1650",
+    "price": 10990000,
+    "originalPrice": 11990000,
+    "image": "assets/images/2.jpg",
+    "description": "Entry gaming PC suitable for esports titles at 1080p.",
+    "stock": 2,
+    "category": "pc",
+    "specs": ["i3 12100F", "GTX 1650", "B660", "8GB RAM", "256GB SSD"]
+  },
+  {
+    "id": 3,
+    "name": "PC GVN Intel i7-13700F/ RTX 4070",
+    "price": 32990000,
+    "originalPrice": 35990000,
+    "image": "assets/images/3.jpg",
+    "description": "High-end gaming PC for 2K and 4K gaming.",
+    "stock": 1,
+    "category": "pc",
+    "specs": ["i7 13700F", "RTX 4070", "Z790", "32GB RAM", "1TB SSD"]
+  },
+  {
+    "id": 4,
+    "name": "PC GVN Intel i9-14900K/ RTX 5090",
+    "price": 79990000,
+    "originalPrice": 84990000,
+    "image": "assets/images/4.jpg",
+    "description": "Ultimate flagship PC with top-tier CPU and GPU combo.",
+    "stock": 0,
+    "category": "pc",
+    "specs": ["i9 14900K", "RTX 5090", "Z790", "64GB RAM", "2TB SSD"]
+  },
+  {
+    "id": 5,
+    "name": "PC GVN AMD Ryzen 5 5600/ RTX 3060",
+    "price": 18990000,
+    "originalPrice": 20990000,
+    "image": "assets/images/5.jpg",
+    "description": "Balanced AMD gaming PC with RTX 3060 for high FPS.",
+    "stock": 4,
+    "category": "pc",
+    "specs": ["R5 5600", "RTX 3060", "B550", "16GB RAM", "500GB SSD"]
+  },
+  {
+    "id": 6,
+    "name": "PC GVN AMD Ryzen 3 4100/ GTX 1650",
+    "price": 8990000,
+    "originalPrice": 9990000,
+    "image": "assets/images/6.jpg",
+    "description": "Budget PC for office work and light gaming.",
+    "stock": 6,
+    "category": "pc",
+    "specs": ["R3 4100", "GTX 1650", "A520", "8GB RAM", "240GB SSD"]
+  },
+  {
+    "id": 7,
+    "name": "PC GVN Intel i5-13400F/ RTX 4060",
+    "price": 22990000,
+    "originalPrice": 24990000,
+    "image": "assets/images/7.jpg",
+    "description": "Modern gaming PC for 1080p and 2K gaming.",
+    "stock": 3,
+    "category": "pc",
+    "specs": ["i5 13400F", "RTX 4060", "B760", "16GB RAM", "512GB SSD"]
+  },
+  {
+    "id": 8,
+    "name": "PC GVN AMD Ryzen 7 5800X/ RTX 4070 Super",
+    "price": 36990000,
+    "originalPrice": 39990000,
+    "image": "assets/images/8.jpg",
+    "description": "High-refresh-rate gaming machine for enthusiasts.",
+    "stock": 2,
+    "category": "pc",
+    "specs": ["R7 5800X", "RTX 4070 Super", "X570", "32GB RAM", "1TB SSD"]
+  },
+  {
+    "id": 9,
+    "name": "PC GVN Intel i3-12100F/ Integrated Graphics",
+    "price": 7490000,
+    "originalPrice": 7990000,
+    "image": "assets/images/9.jpg",
+    "description": "Office PC with Intel CPU, no discrete GPU.",
+    "stock": 8,
+    "category": "pc",
+    "specs": ["i3 12100F", "UHD Graphics", "H610", "8GB RAM", "256GB SSD"]
+  },
+  {
+    "id": 10,
+    "name": "PC GVN AMD Ryzen 5 7600/ RTX 4070",
+    "price": 31990000,
+    "originalPrice": 34990000,
+    "image": "assets/images/10.jpg",
+    "description": "Next-gen AMD platform with strong 2K gaming performance.",
+    "stock": 5,
+    "category": "pc",
+    "specs": ["R5 7600", "RTX 4070", "B650", "32GB RAM", "1TB SSD"]
+  }
+]
+
+
