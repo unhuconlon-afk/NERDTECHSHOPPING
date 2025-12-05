@@ -9,25 +9,53 @@
   <body>
     <header class="site-header">
       <div class="container header-inner">
+        <button class="hamburger-menu" id="hamburgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
         <div class="logo">
           <a href="index.html">PC<span>Store</span></a>
+        </div>
+        <div class="search-container">
+          <input 
+            type="text" 
+            id="searchInput" 
+            class="search-input" 
+            placeholder="Bạn tìm gì hôm nay?"
+            autocomplete="off"
+          />
+          <div id="searchResults" class="search-results"></div>
         </div>
         <nav class="main-nav">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="shop.html">Shop</a></li>
             <li><a href="sales.html" class="active">Sales</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="login.html">Register</a></li>
             <li class="cart-link">
               <a href="cart.html">
                 Cart
                 <span id="cart-count" class="cart-count">0</span>
               </a>
             </li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
           </ul>
         </nav>
       </div>
+      <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+          <button class="drawer-close" id="drawerClose">✕</button>
+        </div>
+        <nav class="drawer-nav">
+          <a href="index.html" class="drawer-link">Home</a>
+          <a href="shop.html" class="drawer-link">Shop</a>
+          <a href="sales.html" class="drawer-link">Sales</a>
+          <a href="login.html" class="drawer-link">Login</a>
+          <a href="register.html" class="drawer-link">Register</a>
+        </nav>
+      </div>
+      <div class="mobile-overlay" id="mobileOverlay"></div>
     </header>
 
     <main class="container page-main">

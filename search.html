@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC Store - Search Results</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <button class="hamburger-menu" id="hamburgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="logo">
+          <a href="index.html">NERD<span>TechStore</span></a>
+        </div>
+        <div class="search-container" id="searchContainer">
+          <input 
+            type="text" 
+            id="searchInput" 
+            class="search-input" 
+            placeholder="Bạn tìm gì hôm nay?"
+            autocomplete="off"
+          />
+          <div id="searchResults" class="search-results"></div>
+        </div>
+        <button class="mobile-search-toggle" id="mobileSearchToggle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li class="cart-link">
+              <a href="cart.html">
+                Cart
+                <span id="cart-count" class="cart-count">0</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+          <button class="drawer-close" id="drawerClose">✕</button>
+        </div>
+        <nav class="drawer-nav">
+          <a href="index.html" class="drawer-link">Home</a>
+          <a href="shop.html" class="drawer-link">Shop</a>
+          <a href="sales.html" class="drawer-link">Sales</a>
+          <a href="login.html" class="drawer-link">Login</a>
+          <a href="register.html" class="drawer-link">Register</a>
+          
+          <div style="border-top: 1px solid #ececec; margin-top: 12px; padding-top: 12px;">
+            <h3 style="font-size: 0.9rem; font-weight: 600; padding: 0 14px; margin: 8px 0; color: #333;">Danh mục</h3>
+            <a href="#" class="drawer-link" style="padding-left: 28px;">Điện thoại</a>
+            <a href="#" class="drawer-link" style="padding-left: 28px;">Laptop</a>
+            <a href="#" class="drawer-link" style="padding-left: 28px;">Laptop Gaming</a>
+            <a href="#" class="drawer-link" style="padding-left: 28px;">PC GVN</a>
+            <a href="#" class="drawer-link" style="padding-left: 28px;">Main/CPU/VGA</a>
+            <a href="#" class="drawer-link" style="padding-left: 28px;">Case/Nguồn/Tản</a>
+            <a href="#" class="drawer-link" style="padding-left: 28px;">Ổ cứng/RAM/Thẻ nhớ</a>
+            <a href="#" class="drawer-link" style="padding-left: 28px;">Loa/Micro/Webcam</a>
+            <a href="#" class="drawer-link" style="padding-left: 28px;">Màn hình</a>
+            <a href="#" class="drawer-link" style="padding-left: 28px;">Bàn phím</a>
+            <a href="#" class="drawer-link" style="padding-left: 28px;">Chuột</a>
+            <a href="#" class="drawer-link" style="padding-left: 28px;">Tai Nghe</a>
+          </div>
+        </nav>
+      </div>
+      <div class="mobile-overlay" id="mobileOverlay"></div>
+    </header>
+
+    <main class="home-main container">
+      <div class="home-layout">
+        <aside class="mega-sidebar">
+          <h2 class="sidebar-title">Danh mục</h2>
+          <ul class="sidebar-menu">
+            <li class="has-mega">
+              <a href="#">Điện thoại</a>
+              <div class="mega-panel">
+                <div class="mega-column">
+                  <h3>Thương hiệu</h3>
+                  <a href="#">Apple</a>
+                  <a href="#">Samsung</a>
+                  <a href="#">Xiaomi</a>
+                  <a href="#">OPPO</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Mức giá</h3>
+                  <a href="#">Dưới 5tr</a>
+                  <a href="#">5-10tr</a>
+                  <a href="#">Trên 20tr</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Loại điện thoại</h3>
+                  <a href="#">Gaming Phone</a>
+                  <a href="#">Flagship</a>
+                  <a href="#">Phổ thông</a>
+                </div>
+              </div>
+            </li>
+            <li class="has-mega">
+              <a href="#">Laptop</a>
+              <div class="mega-panel">
+                <div class="mega-column">
+                  <h3>Brand</h3>
+                  <a href="#">ASUS</a>
+                  <a href="#">ACER</a>
+                  <a href="#">MSI</a>
+                  <a href="#">DELL</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Price</h3>
+                  <a href="#">&lt;15m</a>
+                  <a href="#">15-20m</a>
+                  <a href="#">&gt;20m</a>
+                </div>
+                <div class="mega-column">
+                  <h3>CPU</h3>
+                  <a href="#">i3</a>
+                  <a href="#">i5</a>
+                  <a href="#">i7</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Usage</h3>
+                  <a href="#">Gaming</a>
+                  <a href="#">Office</a>
+                </div>
+              </div>
+            </li>
+            <li class="has-mega">
+              <a href="#">Laptop Gaming</a>
+              <div class="mega-panel">
+                <div class="mega-column">
+                  <h3>Brand</h3>
+                  <a href="#">ASUS ROG</a>
+                  <a href="#">MSI Gaming</a>
+                  <a href="#">ACER Nitro</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Usage</h3>
+                  <a href="#">Esports</a>
+                  <a href="#">AAA Titles</a>
+                </div>
+              </div>
+            </li>
+            <li class="has-mega">
+              <a href="#">PC GVN</a>
+              <div class="mega-panel">
+                <div class="mega-column">
+                  <h3>Series</h3>
+                  <a href="#">RTX 50 Series</a>
+                  <a href="#">Hot Summer</a>
+                </div>
+                <div class="mega-column">
+                  <h3>CPU Intel</h3>
+                  <a href="#">i3</a>
+                  <a href="#">i5</a>
+                  <a href="#">i7</a>
+                  <a href="#">i9</a>
+                </div>
+                <div class="mega-column">
+                  <h3>CPU AMD</h3>
+                  <a href="#">R3</a>
+                  <a href="#">R5</a>
+                  <a href="#">R7</a>
+                </div>
+              </div>
+            </li>
+            <li class="has-mega">
+              <a href="#">Main/CPU/VGA</a>
+              <div class="mega-panel">
+                <div class="mega-column">
+                  <h3>VGA</h3>
+                  <a href="#">RTX 5090</a>
+                  <a href="#">RTX 4070</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Mainboard</h3>
+                  <a href="#">B760</a>
+                  <a href="#">Z790</a>
+                </div>
+                <div class="mega-column">
+                  <h3>CPU</h3>
+                  <a href="#">Intel</a>
+                  <a href="#">AMD</a>
+                </div>
+              </div>
+            </li>
+            <li class="has-mega">
+              <a href="#">Case/Nguồn/Tản</a>
+              <div class="mega-panel">
+                <div class="mega-column">
+                  <h3>Case</h3>
+                  <a href="#">Mid Tower</a>
+                  <a href="#">Full Tower</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Nguồn</h3>
+                  <a href="#">80+ Bronze</a>
+                  <a href="#">80+ Gold</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Tản</h3>
+                  <a href="#">Air</a>
+                  <a href="#">AIO</a>
+                </div>
+              </div>
+            </li>
+            <li class="has-mega">
+              <a href="#">Ổ cứng/RAM/Thẻ nhớ</a>
+              <div class="mega-panel">
+                <div class="mega-column">
+                  <h3>SSD</h3>
+                  <a href="#">NVMe</a>
+                  <a href="#">SATA</a>
+                </div>
+                <div class="mega-column">
+                  <h3>RAM</h3>
+                  <a href="#">8GB</a>
+                  <a href="#">16GB</a>
+                  <a href="#">32GB</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Thẻ nhớ</h3>
+                  <a href="#">Micro SD</a>
+                  <a href="#">SD</a>
+                </div>
+              </div>
+            </li>
+            <li class="has-mega">
+              <a href="#">Loa/Micro/Webcam</a>
+              <div class="mega-panel">
+                <div class="mega-column">
+                  <h3>Loa</h3>
+                  <a href="#">2.0</a>
+                  <a href="#">2.1</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Micro</h3>
+                  <a href="#">Streaming</a>
+                  <a href="#">Studio</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Webcam</h3>
+                  <a href="#">1080p</a>
+                  <a href="#">4K</a>
+                </div>
+              </div>
+            </li>
+            <li class="has-mega">
+              <a href="#">Màn hình</a>
+              <div class="mega-panel">
+                <div class="mega-column">
+                  <h3>Kích thước</h3>
+                  <a href="#">24"</a>
+                  <a href="#">27"</a>
+                  <a href="#">32"</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Tần số quét</h3>
+                  <a href="#">75Hz</a>
+                  <a href="#">144Hz</a>
+                  <a href="#">240Hz</a>
+                </div>
+              </div>
+            </li>
+            <li class="has-mega">
+              <a href="#">Bàn phím</a>
+              <div class="mega-panel">
+                <div class="mega-column">
+                  <h3>Brand</h3>
+                  <a href="#">Logitech</a>
+                  <a href="#">Razer</a>
+                  <a href="#">Akko</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Switch Type</h3>
+                  <a href="#">Linear</a>
+                  <a href="#">Tactile</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Connectivity</h3>
+                  <a href="#">Wired</a>
+                  <a href="#">Wireless</a>
+                </div>
+              </div>
+            </li>
+            <li class="has-mega">
+              <a href="#">Chuột</a>
+              <div class="mega-panel">
+                <div class="mega-column">
+                  <h3>Brand</h3>
+                  <a href="#">Logitech</a>
+                  <a href="#">Razer</a>
+                  <a href="#">Zowie</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Switch Type</h3>
+                  <a href="#">Optical</a>
+                  <a href="#">Mechanical</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Connectivity</h3>
+                  <a href="#">Wired</a>
+                  <a href="#">Wireless</a>
+                </div>
+              </div>
+            </li>
+            <li class="has-mega">
+              <a href="#">Tai Nghe</a>
+              <div class="mega-panel">
+                <div class="mega-column">
+                  <h3>Brand</h3>
+                  <a href="#">HyperX</a>
+                  <a href="#">SteelSeries</a>
+                </div>
+                <div class="mega-column">
+                  <h3>Connectivity</h3>
+                  <a href="#">3.5mm</a>
+                  <a href="#">USB</a>
+                  <a href="#">Wireless</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="filter-box">
+            <h3>🔍 Bộ lọc tìm kiếm</h3>
+            
+            <div class="filter-group">
+              <h4>Khoảng giá</h4>
+              <input type="number" id="minPrice" class="price-input" placeholder="Từ (0đ)" value="0" />
+              <input type="number" id="maxPrice" class="price-input" placeholder="Đến (100tr)" value="100000000" />
+            </div>
+
+            <div class="filter-group">
+              <h4>Thương hiệu</h4>
+              <label class="checkbox-label"><input type="checkbox" value="asus" class="brand-checkbox" /> ASUS</label>
+              <label class="checkbox-label"><input type="checkbox" value="msi" class="brand-checkbox" /> MSI</label>
+              <label class="checkbox-label"><input type="checkbox" value="acer" class="brand-checkbox" /> ACER</label>
+              <label class="checkbox-label"><input type="checkbox" value="apple" class="brand-checkbox" /> Apple</label>
+              <label class="checkbox-label"><input type="checkbox" value="dell" class="brand-checkbox" /> DELL</label>
+            </div>
+
+            <div class="filter-group">
+              <h4>Danh mục</h4>
+              <label class="checkbox-label"><input type="checkbox" value="pc" class="category-checkbox" /> PC</label>
+              <label class="checkbox-label"><input type="checkbox" value="laptop" class="category-checkbox" /> Laptop</label>
+              <label class="checkbox-label"><input type="checkbox" value="phone" class="category-checkbox" /> Điện thoại</label>
+            </div>
+
+            <div class="filter-group">
+              <h4>Tình trạng hàng</h4>
+              <label class="checkbox-label"><input type="checkbox" id="inStockOnly" /> Chỉ hiển thị sản phẩm còn hàng</label>
+            </div>
+
+            <div class="filter-group">
+              <h4>Sắp xếp theo</h4>
+              <select id="sortBy" class="sort-select">
+                <option value="default">Mặc định</option>
+                <option value="price-low-high">Giá: Thấp đến Cao</option>
+                <option value="price-high-low">Giá: Cao đến Thấp</option>
+                <option value="name-asc">Tên: A-Z</option>
+                <option value="name-desc">Tên: Z-A</option>
+              </select>
+            </div>
+
+            <button id="applyFiltersBtn" class="apply-btn">Áp dụng</button>
+          </div>
+        </aside>
+
+        <section class="search-content">
+          <h2>Kết quả tìm kiếm</h2>
+          <div id="search-results-container" class="product-grid">
+            <!-- JS will inject product cards here -->
+          </div>
+          <div id="search-no-results" class="no-results" style="display: none;">
+            <p>Không tìm thấy sản phẩm nào phù hợp</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+      // Populate search input with keyword from URL and optionally open filters
+      (function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const keyword = urlParams.get("keyword");
+        const openFilters = urlParams.get("filters");
+        const minPrice = urlParams.get("minPrice");
+        const maxPrice = urlParams.get("maxPrice");
+
+        if (keyword) {
+          const searchInput = document.getElementById("searchInput");
+          if (searchInput) {
+            searchInput.value = decodeURIComponent(keyword);
+          }
+        }
+
+        if (minPrice) {
+            const minPriceInput = document.getElementById("minPrice");
+            if(minPriceInput) minPriceInput.value = minPrice;
+        }
+        if (maxPrice) {
+            const maxPriceInput = document.getElementById("maxPrice");
+            if(maxPriceInput) maxPriceInput.value = maxPrice;
+        }
+
+        if (openFilters) {
+          // On desktop show the filter box highlight
+          const filterBox = document.querySelector('.filter-box');
+          if (filterBox) {
+            filterBox.classList.add('active');
+            try { filterBox.scrollIntoView({behavior: 'smooth', block: 'start'}); } catch(e) {}
+          }
+
+          // On small screens open the mobile drawer so categories/filters are visible
+          if (window.innerWidth <= 768) {
+            const mobileDrawer = document.getElementById('mobileDrawer');
+            const mobileOverlay = document.getElementById('mobileOverlay');
+            if (mobileDrawer && mobileOverlay) {
+              mobileDrawer.classList.add('active');
+              mobileOverlay.classList.add('active');
+            }
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>

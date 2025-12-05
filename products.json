@@ -1,114 +1,351 @@
 [
   {
     "id": 1,
-    "name": "PC GVN Intel i5-12400F/ VGA RTX 3050",
-    "price": 15890000,
-    "originalPrice": 17330000,
-    "image": "assets/images/1.jpg",
-    "description": "Powerful gaming PC with Intel i5-12400F CPU and RTX 3050 graphics for smooth 1080p gaming.",
-    "stock": 5,
-    "category": "pc",
-    "specs": ["i5 12400F", "RTX 3050", "B760", "16GB RAM", "256GB SSD"]
+    "name": "iPhone 15 Pro Max 256GB Titanium",
+    "price": 29990000,
+    "originalPrice": 34990000,
+    "image": "assets/images/iphone-15-prm.jpg",
+    "description": "Thiết kế khung Titan, Chip A17 Pro mạnh mẽ nhất thế giới smartphone.",
+    "stock": 50,
+    "category": "phone",
+    "brand": "Apple",
+    "specs": [
+      "Apple A17 Pro",
+      "6.7\" OLED 120Hz",
+      "256GB NVMe",
+      "Camera 48MP"
+    ]
   },
   {
     "id": 2,
-    "name": "PC GVN Intel i3-12100F/ GTX 1650",
-    "price": 10990000,
-    "originalPrice": 11990000,
-    "image": "assets/images/2.jpg",
-    "description": "Entry gaming PC suitable for esports titles at 1080p.",
-    "stock": 2,
-    "category": "pc",
-    "specs": ["i3 12100F", "GTX 1650", "B660", "8GB RAM", "256GB SSD"]
+    "name": "Samsung Galaxy S24 Ultra 5G",
+    "price": 31990000,
+    "originalPrice": 33990000,
+    "image": "assets/images/s24-ultra.jpg",
+    "description": "Quyền năng Galaxy AI, bút S-Pen thần thánh và camera zoom 100x.",
+    "stock": 30,
+    "category": "phone",
+    "brand": "Samsung",
+    "specs": [
+      "Snapdragon 8 Gen 3",
+      "12GB RAM",
+      "Titanium Frame",
+      "5000mAh"
+    ]
   },
   {
     "id": 3,
-    "name": "PC GVN Intel i7-13700F/ RTX 4070",
-    "price": 32990000,
-    "originalPrice": 35990000,
-    "image": "assets/images/3.jpg",
-    "description": "High-end gaming PC for 2K and 4K gaming.",
-    "stock": 1,
-    "category": "pc",
-    "specs": ["i7 13700F", "RTX 4070", "Z790", "32GB RAM", "1TB SSD"]
+    "name": "ASUS ROG Strix G16 (2024)",
+    "price": 49000000,
+    "originalPrice": 51000000,
+    "image": "assets/images/rog-g16.jpg",
+    "description": "Laptop Gaming màn hình 16 inch 240Hz, tản nhiệt 3 quạt mát lạnh.",
+    "stock": 10,
+    "category": "laptop",
+    "brand": "ASUS",
+    "usage": "Gaming",
+    "cpu": "i7",
+    "specs": [
+      "Core i7-13650HX",
+      "RTX 4060 8GB",
+      "16GB DDR5",
+      "512GB SSD"
+    ]
   },
   {
     "id": 4,
-    "name": "PC GVN Intel i9-14900K/ RTX 5090",
-    "price": 79990000,
-    "originalPrice": 84990000,
-    "image": "assets/images/4.jpg",
-    "description": "Ultimate flagship PC with top-tier CPU and GPU combo.",
-    "stock": 0,
-    "category": "pc",
-    "specs": ["i9 14900K", "RTX 5090", "Z790", "64GB RAM", "2TB SSD"]
+    "name": "MacBook Air M3 13 inch",
+    "price": 27990000,
+    "originalPrice": 30000000,
+    "image": "assets/images/macbook-air-m3.jpg",
+    "description": "Mỏng nhẹ tuyệt đối, pin trâu 18 tiếng, chip M3 xử lý mượt mà mọi tác vụ văn phòng.",
+    "stock": 25,
+    "category": "laptop",
+    "brand": "Apple",
+    "usage": "Office",
+    "specs": [
+      "Apple M3 Chip",
+      "8GB Unified Memory",
+      "256GB SSD",
+      "Liquid Retina Display"
+    ]
   },
   {
     "id": 5,
-    "name": "PC GVN AMD Ryzen 5 5600/ RTX 3060",
-    "price": 18990000,
-    "originalPrice": 20990000,
-    "image": "assets/images/5.jpg",
-    "description": "Balanced AMD gaming PC with RTX 3060 for high FPS.",
-    "stock": 4,
-    "category": "pc",
-    "specs": ["R5 5600", "RTX 3060", "B550", "16GB RAM", "500GB SSD"]
+    "name": "ACER Nitro V 15",
+    "price": 19990000,
+    "originalPrice": 22000000,
+    "image": "assets/images/acer-nitro.jpg",
+    "description": "Laptop Gaming quốc dân, hiệu năng cao giá rẻ.",
+    "stock": 100,
+    "category": "laptop",
+    "brand": "ACER",
+    "usage": "Gaming",
+    "cpu": "i5",
+    "specs": [
+      "Core i5-13420H",
+      "RTX 4050 6GB",
+      "144Hz Display",
+      "512GB SSD"
+    ]
   },
   {
     "id": 6,
-    "name": "PC GVN AMD Ryzen 3 4100/ GTX 1650",
-    "price": 8990000,
-    "originalPrice": 9990000,
-    "image": "assets/images/6.jpg",
-    "description": "Budget PC for office work and light gaming.",
-    "stock": 6,
-    "category": "pc",
-    "specs": ["R3 4100", "GTX 1650", "A520", "8GB RAM", "240GB SSD"]
+    "name": "VGA ASUS ROG Strix GeForce RTX 5090",
+    "price": 68000000,
+    "originalPrice": 70000000,
+    "image": "assets/images/vga-rtx-5090.jpg",
+    "description": "Siêu phẩm card đồ họa 2025, chiến game 8K mượt mà.",
+    "stock": 2,
+    "category": "vga",
+    "brand": "ASUS",
+    "specs": [
+      "32GB GDDR7",
+      "PCIe 5.0",
+      "DLSS 4.0",
+      "3.5 Slot Design"
+    ]
   },
   {
     "id": 7,
-    "name": "PC GVN Intel i5-13400F/ RTX 4060",
-    "price": 22990000,
-    "originalPrice": 24990000,
-    "image": "assets/images/7.jpg",
-    "description": "Modern gaming PC for 1080p and 2K gaming.",
-    "stock": 3,
-    "category": "pc",
-    "specs": ["i5 13400F", "RTX 4060", "B760", "16GB RAM", "512GB SSD"]
+    "name": "VGA MSI RTX 4060 Ventus 2X",
+    "price": 8199000,
+    "originalPrice": 9000000,
+    "image": "assets/images/vga-4060.jpg",
+    "description": "Card đồ họa tầm trung tốt nhất cho cấu hình Gaming 15 triệu.",
+    "stock": 40,
+    "category": "vga",
+    "brand": "MSI",
+    "specs": [
+      "8GB GDDR6",
+      "DLSS 3",
+      "Dual Fan",
+      "Low Power"
+    ]
   },
   {
     "id": 8,
-    "name": "PC GVN AMD Ryzen 7 5800X/ RTX 4070 Super",
-    "price": 36990000,
-    "originalPrice": 39990000,
-    "image": "assets/images/8.jpg",
-    "description": "High-refresh-rate gaming machine for enthusiasts.",
-    "stock": 2,
-    "category": "pc",
-    "specs": ["R7 5800X", "RTX 4070 Super", "X570", "32GB RAM", "1TB SSD"]
+    "name": "CPU Intel Core i9-14900K",
+    "price": 12900000,
+    "originalPrice": 16000000,
+    "image": "assets/images/cpu-i9.jpg",
+    "description": "Bộ vi xử lý đầu bảng của Intel, xung nhịp lên tới 6.0GHz.",
+    "stock": 15,
+    "category": "cpu",
+    "brand": "Intel",
+    "specs": [
+      "24 Cores / 32 Threads",
+      "Max Turbo 6.0GHz",
+      "LGA 1700",
+      "UHD 770"
+    ]
   },
   {
     "id": 9,
-    "name": "PC GVN Intel i3-12100F/ Integrated Graphics",
-    "price": 7490000,
-    "originalPrice": 7990000,
-    "image": "assets/images/9.jpg",
-    "description": "Office PC with Intel CPU, no discrete GPU.",
-    "stock": 8,
-    "category": "pc",
-    "specs": ["i3 12100F", "UHD Graphics", "H610", "8GB RAM", "256GB SSD"]
+    "name": "CPU AMD Ryzen 7 7800X3D",
+    "price": 9900000,
+    "originalPrice": 11000000,
+    "image": "assets/images/cpu-amd.jpg",
+    "description": "CPU Gaming tốt nhất thế giới nhờ công nghệ 3D V-Cache.",
+    "stock": 20,
+    "category": "cpu",
+    "brand": "AMD",
+    "specs": [
+      "8 Cores / 16 Threads",
+      "96MB L3 Cache",
+      "AM5 Socket",
+      "120W TDP"
+    ]
   },
   {
     "id": 10,
-    "name": "PC GVN AMD Ryzen 5 7600/ RTX 4070",
-    "price": 31990000,
-    "originalPrice": 34990000,
-    "image": "assets/images/10.jpg",
-    "description": "Next-gen AMD platform with strong 2K gaming performance.",
+    "name": "Mainboard ASUS TUF GAMING B760M-PLUS WIFI",
+    "price": 4200000,
+    "originalPrice": 5000000,
+    "image": "assets/images/main-b760.jpg",
+    "description": "Bo mạch chủ bền bỉ chuẩn quân đội, tích hợp Wifi 6.",
+    "stock": 20,
+    "category": "mainboard",
+    "brand": "ASUS",
+    "specs": [
+      "Socket LGA 1700",
+      "DDR5 Support",
+      "PCIe 5.0",
+      "Wifi 6 + Bluetooth 5.3"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "RAM Corsair Vengeance RGB 32GB (2x16GB) DDR5",
+    "price": 8999000,
+    "originalPrice": 12000000,
+    "image": "assets/images/ram-corsair.jpg",
+    "description": "RAM DDR5 tốc độ cao với dải đèn LED RGB tuyệt đẹp.",
     "stock": 5,
-    "category": "pc",
-    "specs": ["R5 7600", "RTX 4070", "B650", "32GB RAM", "1TB SSD"]
+    "category": "ram",
+    "brand": "Corsair",
+    "specs": [
+      "32GB Kit (2x16)",
+      "Bus 6000MHz",
+      "CL36 Latency",
+      "iCUE RGB"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "SSD Samsung 990 PRO 1TB NVMe",
+    "price": 4999000,
+    "originalPrice": 8000000,
+    "image": "assets/images/ssd-990pro.jpg",
+    "description": "Ổ cứng SSD nhanh nhất hiện nay, tốc độ đọc 7450MB/s.",
+    "stock": 35,
+    "category": "ssd",
+    "brand": "Samsung",
+    "specs": [
+      "1TB Capacity",
+      "Read 7450MB/s",
+      "Write 6900MB/s",
+      "PCIe 4.0"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "PC NT Hot Summer (CPU i5-12400F / VGA RTX 4060)",
+    "price": 22000000,
+    "originalPrice": 30000000,
+    "image": "assets/images/pc-gvn-summer.jpg",
+    "description": "PC lắp sẵn tối ưu chi phí, chiến mượt PUBG, Valorant, GTA V.",
+    "stock": 10,
+    "category": "pc_gvn",
+    "brand": "GVN",
+    "specs": [
+      "Core i5-12400F",
+      "RTX 4060 8GB",
+      "16GB RAM",
+      "500GB SSD"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "PC NT Super Luxury ( CPU i9-14900K / VGA RTX 5090 / 64GB RAM / 2TB SSD )",
+    "price": 129900000,
+    "originalPrice": 180000000,
+    "image": "assets/images/pc-gvn-luxury1.jpg",
+    "description": "Trang bị CPU i9-14900K , mang lại hiệu suất vượt trội , chiến game 4K cùng card đồ họa rời RTX 5090 24GB",
+    "stock": 1,
+    "category": "pc_gvn",
+    "brand": "GVN",
+    "specs": [
+      "Core i9-14900KS",
+      "RTX 5090 32GB",
+      "64GB RAM DDR5",
+      "2TB SSD Gen5"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Màn hình LG UltraGear 27GR75Q-B",
+    "price": 6500000,
+    "originalPrice": 7900000,
+    "image": "assets/images/lg-27gr75q.jpg",
+    "description": "Màn hình 2K 165Hz tấm nền IPS, màu sắc chuẩn điện ảnh.",
+    "stock": 12,
+    "category": "monitor",
+    "brand": "LG",
+    "specs": [
+      "27 inch QHD (2K)",
+      "165Hz Refresh Rate",
+      "IPS 1ms",
+      "G-Sync Compatible"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Màn hình ASUS ProArt PA248QV",
+    "price": 4500000,
+    "originalPrice": 0,
+    "image": "assets/images/asus-proart.jpg",
+    "description": "Màn hình chuyên đồ họa, độ lệch màu Delta E < 2.",
+    "stock": 8,
+    "category": "monitor",
+    "brand": "ASUS",
+    "specs": [
+      "24 inch FHD",
+      "75Hz",
+      "100% sRGB",
+      "Delta E < 2"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Chuột Logitech G Pro X Superlight 2",
+    "price": 3290000,
+    "originalPrice": 3600000,
+    "image": "assets/images/mouse-gpro.jpg",
+    "description": "Chuột Gaming không dây nhẹ nhất thế giới, Switch quang học bất tử.",
+    "stock": 40,
+    "category": "mouse",
+    "brand": "Logitech",
+    "connectivity": "Wireless",
+    "specs": [
+      "60g Weight",
+      "Hero 2 Sensor",
+      "2000Hz Polling",
+      "95H Battery"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Bàn phím Akko 5075B Plus Naruto",
+    "price": 2400000,
+    "originalPrice": 2800000,
+    "image": "assets/images/kb-akko-naruto.jpg",
+    "description": "Bàn phím cơ phiên bản giới hạn Naruto, Gasket Mount gõ cực êm.",
+    "stock": 5,
+    "category": "keyboard",
+    "brand": "Akko",
+    "connectivity": "Wireless",
+    "switchType": "Linear",
+    "specs": [
+      "75% Layout",
+      "Gasket Mount",
+      "Hot-swap",
+      "RGB Led"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Tai nghe HyperX Cloud II",
+    "price": 1800000,
+    "originalPrice": 2500000,
+    "image": "assets/images/hs-hyperx.jpg",
+    "description": "Tai nghe huyền thoại của game thủ FPS, âm thanh vòm 7.1.",
+    "stock": 60,
+    "category": "headset",
+    "brand": "HyperX",
+    "connectivity": "Wired",
+    "specs": [
+      "7.1 Surround Sound",
+      "Noise Cancelling Mic",
+      "Memory Foam",
+      "USB Sound Card"
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Ghế Gaming Anda Seat Kaiser 3",
+    "price": 8500000,
+    "originalPrice": 10000000,
+    "image": "assets/images/chair-anda.jpg",
+    "description": "Ghế công thái học cao cấp, da PVC bền bỉ, chịu tải 180kg.",
+    "stock": 4,
+    "category": "chair",
+    "brand": "Anda Seat",
+    "specs": [
+      "4D Armrest",
+      "Magnetic Pillow",
+      "165 Degree Recline",
+      "Lifetime Frame Warranty"
+    ]
   }
 ]
-
-

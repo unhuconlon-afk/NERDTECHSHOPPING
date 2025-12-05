@@ -1,58 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PC Store - Product Detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
+</head>
+<body>
     <header class="site-header">
-      <div class="container header-inner">
-        <div class="logo">
-          <a href="index.html">PC<span>Store</span></a>
+        <div class="container header-inner">
+          <button class="hamburger-menu" id="hamburgerMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="logo">
+            <a href="index.html">PC<span>Store</span></a>
+          </div>
+          <div class="search-container">
+            <input 
+              type="text" 
+              id="searchInput" 
+              class="search-input" 
+              placeholder="Bạn tìm gì hôm nay?"
+              autocomplete="off"
+            />
+            <div id="searchResults" class="search-results"></div>
+          </div>
+          <nav class="main-nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="sales.html">Sales</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li class="cart-link">
+                <a href="cart.html">
+                  Cart
+                  <span id="cart-count" class="cart-count">0</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-nav">
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="sales.html">Sales</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="login.html">Register</a></li>
-            <li class="cart-link">
-              <a href="cart.html">
-                Cart
-                <span id="cart-count" class="cart-count">0</span>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+        <div class="mobile-drawer" id="mobileDrawer">
+          <div class="drawer-header">
+            <button class="drawer-close" id="drawerClose">✕</button>
+          </div>
+          <nav class="drawer-nav">
+            <a href="index.html" class="drawer-link">Home</a>
+            <a href="shop.html" class="drawer-link">Shop</a>
+            <a href="sales.html" class="drawer-link">Sales</a>
+            <a href="login.html" class="drawer-link">Login</a>
+            <a href="register.html" class="drawer-link">Register</a>
+          </nav>
+        </div>
+        <div class="mobile-overlay" id="mobileOverlay"></div>
+      </header>
 
     <main class="container page-main" id="product-detail-page">
-      <div class="product-detail">
-        <div class="product-detail-image">
-          <img id="detail-image" src="" alt="Product image" />
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs" id="breadcrumbs">
+            <a href="index.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a id="bc-category" href="#">Category</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span id="bc-product-name">Product Name</span>
         </div>
-        <div class="product-detail-info">
-          <h1 id="detail-name"></h1>
-          <p id="detail-description"></p>
-          <div class="detail-specs" id="detail-specs"></div>
-          <div class="detail-pricing">
-            <span id="detail-original-price" class="price-original"></span>
-            <span id="detail-price" class="price-final"></span>
-          </div>
-          <p id="detail-stock" class="stock-label"></p>
-          <button id="detail-add-to-cart" class="btn-primary">
-            Add to Cart
-          </button>
+
+        <div class="product-detail-layout">
+            <!-- Left Column: Image Gallery -->
+            <div class="product-gallery">
+                <div class="main-image-container">
+                    <img id="main-product-image" src="assets/images/placeholder.png" alt="Main product image">
+                </div>
+                <div class="thumbnail-gallery" id="thumbnail-gallery">
+                    <!-- Thumbnails will be injected by JS -->
+                </div>
+            </div>
+
+            <!-- Right Column: Product Info -->
+            <div class="product-info">
+                <h1 id="detail-name" class="product-title">Product Title</h1>
+                
+                <div class="product-meta">
+                    <span class="meta-item">Brand: <strong id="detail-brand">N/A</strong></span>
+                    <span class="meta-item">Stock: <strong id="detail-stock" class="stock-status">N/A</strong></span>
+                </div>
+
+                <div class="pricing-section">
+                    <span id="detail-price" class="current-price">0đ</span>
+                    <span id="detail-original-price" class="original-price">0đ</span>
+                </div>
+
+                <div class="short-description" id="detail-description">
+                    <p>This is a short and compelling description of the product, highlighting its key features and benefits for the customer.</p>
+                </div>
+                
+                <div class="actions-section">
+                    <div class="quantity-selector">
+                        <button id="quantity-minus">-</button>
+                        <input type="number" id="quantity-input" value="1" min="1">
+                        <button id="quantity-plus">+</button>
+                    </div>
+                    <button id="detail-add-to-cart" class="btn-primary add-to-cart-btn">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        Add to Cart
+                    </button>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <!-- Tabs Section -->
+        <div class="product-info-tabs">
+            <div class="tab-headers">
+                <button class="tab-link active" data-tab="description">Description</button>
+                <button class="tab-link" data-tab="specs">Specifications</button>
+                <button class="tab-link" data-tab="reviews">Reviews</button>
+            </div>
+            <div class="tab-content">
+                <div id="tab-description" class="tab-pane active">
+                    <h2>Product Description</h2>
+                    <p>Detailed long-form description goes here. It can include marketing copy, feature breakdowns, usage scenarios, and more to fully inform the potential buyer.</p>
+                </div>
+                <div id="tab-specs" class="tab-pane">
+                    <h2>Technical Specifications</h2>
+                    <ul id="specs-list" class="specs-list">
+                        <!-- Specs will be injected by JS -->
+                    </ul>
+                </div>
+                <div id="tab-reviews" class="tab-pane">
+                    <h2>Customer Reviews</h2>
+                    <p>Review functionality coming soon!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Products Section -->
+        <div class="related-products">
+            <h2>Related Products</h2>
+            <div id="related-products-grid" class="product-grid">
+                <!-- Related products will be injected by JS -->
+            </div>
+        </div>
+
     </main>
 
     <script src="assets/js/main.js"></script>
-  </body>
-  </html>
-
-
+</body>
+</html>
