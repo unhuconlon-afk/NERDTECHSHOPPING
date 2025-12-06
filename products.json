@@ -372,7 +372,7 @@
     "name": "Laptop gaming ASUS TUF Gaming F16 FX608JH RV039W",
     "price": 30990000,
     "originalPrice": 33390000,
-    "image": "assets/images/asus_tuf_gaming_f16_04_l_1_7e796bbd4cad429a873f4d6545b64039_master.jpg",
+    "image": "assets/images/asus_tuf_gaming_f16_fx608.jpg",
     "description": "ASUS TUF Gaming F16 FX608JH-RV039W mang lại sức mạnh chơi game vượt trội với i5-13450HX kết hợp RTX 5050, cho trải nghiệm mượt mà trên màn hình 165Hz.",
     "stock": 7,
     "category": "laptop",
@@ -392,6 +392,14 @@
     "price": 3990000,
     "originalPrice": 6990000,
     "image": "assets/images/tainghesteelseriesarctisnova7.jpg",
-    "description": "Tai nghe gaming không dây, pin 38 giờ, kết nối cùng lúc 2.4 GHz + Bluetooth, micro ClearCast Gen 2 khử ồn, thiết kế đỏ-vàng độc đáo với họa tiết rồng may mắn, thích hợp chơi game / nghe nhạc / gọi thoại."
+    "description": "Tai nghe gaming không dây, pin 38 giờ, kết nối cùng lúc 2.4 GHz + Bluetooth, micro ClearCast Gen 2 khử ồn, thiết kế đỏ-vàng độc đáo với họa tiết rồng may mắn, thích hợp chơi game / nghe nhạc / gọi thoại.",
+    "stock": 15,
+    "category": "headset",
+    "brand": "Steelseries",
+    "specs": [
+      "Wireless",
+      "Chụp tai",
+      "USB-C Charging"
+    ]
   }
 ]
