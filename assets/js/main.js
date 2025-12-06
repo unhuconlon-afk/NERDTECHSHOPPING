@@ -180,8 +180,9 @@ async function initHomePage() {
 
     function renderByCpu(cpuTag) {
       bestGrid.innerHTML = "";
+      const cpuRegex = new RegExp(`\\b${cpuTag}\\b`, 'i');
       const filtered = pcProducts.filter((p) =>
-        Array.isArray(p.specs) ? p.specs.some((s) => s.toLowerCase().includes(cpuTag.toLowerCase())) : false
+        Array.isArray(p.specs) ? p.specs.some((s) => cpuRegex.test(s)) : false
       );
       filtered.slice(0, 5).forEach((p) => {
         bestGrid.appendChild(createProductCard(p));
@@ -740,6 +741,11 @@ function initSearchBar() {
   // Handle Enter key to redirect to search page
   searchInput.addEventListener("keypress", (e) => {
     if (e.key === "Enter") {
+      // On search.html, the search is handled dynamically by initSearchPage
+      if (window.location.pathname.includes("search.html")) {
+        e.preventDefault();
+        return;
+      }
       const query = searchInput.value.trim();
       if (query) {
         window.location.href = `search.html?keyword=${encodeURIComponent(query)}`;
@@ -829,7 +835,6 @@ function updateUserNav() {
 }
 
 async function initSearchPage() {
-  // Check if we're on the search page
   const searchResultsContainer = document.getElementById("search-results-container");
   const noResults = document.getElementById("search-no-results");
   
@@ -837,14 +842,26 @@ async function initSearchPage() {
     return;
   }
   
-  // Get the keyword from URL
   const urlParams = new URLSearchParams(window.location.search);
-  const keyword = urlParams.get("keyword") || "";
+  let keyword = urlParams.get("keyword") || ""; // Use let to allow mutation
+  const categoryFromUrl = urlParams.get("category");
+  const brandFromUrl = urlParams.get("brand");
+
+  // Pre-select category checkbox
+  if (categoryFromUrl) {
+    const catCheckbox = document.querySelector(`.category-checkbox[value="${categoryFromUrl}"]`);
+    if (catCheckbox) catCheckbox.checked = true;
+  }
   
-  // Fetch products once
+  // Pre-select brand checkbox
+  if (brandFromUrl) {
+    const brandValue = brandFromUrl.toLowerCase();
+    const brandCheckbox = document.querySelector(`.brand-checkbox[value="${brandValue}"]`);
+    if (brandCheckbox) brandCheckbox.checked = true;
+  }
+
   const allProducts = await fetchProducts();
   
-  // Filter controls
   const minPriceInput = document.getElementById("minPrice");
   const maxPriceInput = document.getElementById("maxPrice");
   const applyFiltersBtn = document.getElementById("applyFiltersBtn");
@@ -852,8 +869,8 @@ async function initSearchPage() {
   const brandCheckboxes = document.querySelectorAll(".brand-checkbox");
   const inStockCheckbox = document.getElementById("inStockOnly");
   const sortBySelect = document.getElementById("sortBy");
+  const searchInput = document.getElementById("searchInput");
 
-  // Function to render filtered results
   function renderFilteredResults() {
     const minPrice = parseFloat(minPriceInput?.value || 0);
     const maxPrice = parseFloat(maxPriceInput?.value || 1000000000);
@@ -868,36 +885,27 @@ async function initSearchPage() {
 
     const lowerKeyword = keyword.toLowerCase();
 
-    // Filter products
     let filtered = allProducts.filter((product) => {
-      // Text search
       const nameMatch = product.name.toLowerCase().includes(lowerKeyword);
       const categoryMatch = product.category.toLowerCase().includes(lowerKeyword);
       const specsMatch = Array.isArray(product.specs)
         ? product.specs.some((spec) => spec.toLowerCase().includes(lowerKeyword))
         : false;
-      const matchesKeyword = nameMatch || categoryMatch || specsMatch;
+      const matchesKeyword = lowerKeyword === "" || nameMatch || categoryMatch || specsMatch;
 
-      // Price filter
       const matchesPrice = product.price >= minPrice && product.price <= maxPrice;
-
-      // Category filter
+      
       const matchesCategory =
         selectedCategories.length === 0 || selectedCategories.includes(product.category);
-
-      // Brand filter (check if product name contains any selected brand)
+      
       const matchesBrand =
-        selectedBrands.length === 0 || selectedBrands.some((brand) => 
-          product.name.toLowerCase().includes(brand.toLowerCase())
-        );
+        selectedBrands.length === 0 || selectedBrands.includes(product.brand?.toLowerCase());
 
-      // Stock filter
       const matchesStock = !inStockOnly || product.stock > 0;
 
       return matchesKeyword && matchesPrice && matchesCategory && matchesBrand && matchesStock;
     });
 
-    // Sort products
     if (sortBy === "price-low-high") {
       filtered.sort((a, b) => a.price - b.price);
     } else if (sortBy === "price-high-low") {
@@ -908,7 +916,6 @@ async function initSearchPage() {
       filtered.sort((a, b) => b.name.localeCompare(a.name));
     }
 
-    // Render results
     if (filtered.length === 0) {
       noResults.style.display = "block";
       searchResultsContainer.innerHTML = "";
@@ -921,26 +928,31 @@ async function initSearchPage() {
     }
   }
 
-  // Initial render
+  // Listener for dynamic search on this page
+  if (searchInput) {
+    searchInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+            e.preventDefault();
+            keyword = searchInput.value.trim();
+            renderFilteredResults();
+        }
+    });
+  }
+
   renderFilteredResults();
 
-  // Event listeners for filters
   if (applyFiltersBtn) {
     applyFiltersBtn.addEventListener("click", renderFilteredResults);
   }
-
   categoryCheckboxes.forEach((checkbox) => {
     checkbox.addEventListener("change", renderFilteredResults);
   });
-
   brandCheckboxes.forEach((checkbox) => {
     checkbox.addEventListener("change", renderFilteredResults);
   });
-
   if (inStockCheckbox) {
     inStockCheckbox.addEventListener("change", renderFilteredResults);
   }
-
   if (sortBySelect) {
     sortBySelect.addEventListener("change", renderFilteredResults);
   }
