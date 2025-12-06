@@ -150,10 +150,10 @@ function createProductCard(product) {
   priceBox.appendChild(newPrice);
   card.appendChild(priceBox);
 
-  if (product.stock < 3 && product.stock > 0) {
+  if (product.stock < 5 && product.stock > 0) {
      const stock = document.createElement("div");
      stock.className = "stock-warning";
-     stock.textContent = `Only ${product.stock} left!`;
+     stock.textContent = `Chỉ còn ${product.stock} ! duy nhất`;
      priceBox.appendChild(stock);
   }
 
@@ -170,8 +170,30 @@ function createProductCard(product) {
   return card;
 }
 
+function renderRecentlyViewed(products) {
+    const grid = document.getElementById("recently-viewed-grid");
+    if (!grid) return;
+
+    const recentlyViewedIds = JSON.parse(localStorage.getItem("recentlyViewed") || "[]");
+    
+    if (recentlyViewedIds.length === 0) {
+        if(grid.parentElement) grid.parentElement.style.display = 'none'; // Hide the whole section if empty
+        return;
+    }
+    
+    // Get product objects from the IDs, maintaining the order from the recently viewed list
+    const recentlyViewedProducts = recentlyViewedIds.map(id => products.find(p => p.id === id)).filter(Boolean); // filter(Boolean) removes any undefined products
+
+    grid.innerHTML = "";
+    recentlyViewedProducts.forEach(p => {
+        grid.appendChild(createProductCard(p));
+    });
+}
+
 async function initHomePage() {
   const products = await fetchProducts();
+
+  renderRecentlyViewed(products);
 
   // Handle Best-selling PCs with tabs
   const bestGrid = document.getElementById("best-selling-grid");
@@ -180,10 +202,15 @@ async function initHomePage() {
 
     function renderByCpu(cpuTag) {
       bestGrid.innerHTML = "";
-      const cpuRegex = new RegExp(`\\b${cpuTag}\\b`, 'i');
+      const searchTerms = cpuTag.toLowerCase().split(' ').filter(t => t !== 'series');
+
       const filtered = pcProducts.filter((p) =>
-        Array.isArray(p.specs) ? p.specs.some((s) => cpuRegex.test(s)) : false
+        Array.isArray(p.specs) ? p.specs.some((s) => {
+            const lowerSpec = s.toLowerCase();
+            return searchTerms.every(term => lowerSpec.includes(term));
+        }) : false
       );
+
       filtered.slice(0, 5).forEach((p) => {
         bestGrid.appendChild(createProductCard(p));
       });
@@ -200,7 +227,7 @@ async function initHomePage() {
     });
 
     // Default tab
-    renderByCpu("i5");
+    renderByCpu("Core i5");
   }
   
   // Generic renderer for other best-selling categories
@@ -371,6 +398,17 @@ async function initProductDetailPage() {
         return;
     }
 
+    // --- Add to Recently Viewed ---
+    const MAX_RECENTLY_VIEWED = 5;
+    let recentlyViewed = JSON.parse(localStorage.getItem("recentlyViewed") || "[]");
+    // Remove any existing instance of this product ID
+    recentlyViewed = recentlyViewed.filter(id => id !== product.id);
+    // Add the new product ID to the front
+    recentlyViewed.unshift(product.id);
+    // Trim the list to the max size
+    const trimmedList = recentlyViewed.slice(0, MAX_RECENTLY_VIEWED);
+    localStorage.setItem("recentlyViewed", JSON.stringify(trimmedList));
+
     // --- Populate Page Elements ---
     document.title = `PC Store - ${product.name}`;
     
@@ -516,7 +554,7 @@ async function initProductDetailPage() {
     // --- Related Products ---
     const relatedGrid = document.getElementById("related-products-grid");
     if (relatedGrid) {
-        const relatedProducts = allProducts.filter(p => p.category === product.category && p.id !== product.id).slice(0, 4);
+const relatedProducts = allProducts.filter(p => p.brand === product.brand && p.id !== product.id).slice(0, 4);
         relatedGrid.innerHTML = "";
         if (relatedProducts.length > 0) {
             relatedProducts.forEach(p => relatedGrid.appendChild(createProductCard(p)));
@@ -846,18 +884,21 @@ async function initSearchPage() {
   let keyword = urlParams.get("keyword") || ""; // Use let to allow mutation
   const categoryFromUrl = urlParams.get("category");
   const brandFromUrl = urlParams.get("brand");
+  const usageFromUrl = urlParams.get("usage");
 
-  // Pre-select category checkbox
+  // Pre-select checkboxes from URL params
   if (categoryFromUrl) {
     const catCheckbox = document.querySelector(`.category-checkbox[value="${categoryFromUrl}"]`);
     if (catCheckbox) catCheckbox.checked = true;
   }
-  
-  // Pre-select brand checkbox
   if (brandFromUrl) {
     const brandValue = brandFromUrl.toLowerCase();
     const brandCheckbox = document.querySelector(`.brand-checkbox[value="${brandValue}"]`);
     if (brandCheckbox) brandCheckbox.checked = true;
+  }
+  if (usageFromUrl) {
+    const usageCheckbox = document.querySelector(`.usage-checkbox[value="${usageFromUrl}"]`);
+    if (usageCheckbox) usageCheckbox.checked = true;
   }
 
   const allProducts = await fetchProducts();
@@ -867,17 +908,23 @@ async function initSearchPage() {
   const applyFiltersBtn = document.getElementById("applyFiltersBtn");
   const categoryCheckboxes = document.querySelectorAll(".category-checkbox");
   const brandCheckboxes = document.querySelectorAll(".brand-checkbox");
+  const usageCheckboxes = document.querySelectorAll(".usage-checkbox");
   const inStockCheckbox = document.getElementById("inStockOnly");
   const sortBySelect = document.getElementById("sortBy");
   const searchInput = document.getElementById("searchInput");
 
   function renderFilteredResults() {
-    const minPrice = parseFloat(minPriceInput?.value || 0);
-    const maxPrice = parseFloat(maxPriceInput?.value || 1000000000);
+    let minPrice = parseFloat(minPriceInput?.value);
+    if (isNaN(minPrice)) minPrice = 0;
+    let maxPrice = parseFloat(maxPriceInput?.value);
+    if (isNaN(maxPrice)) maxPrice = Infinity;
     const selectedCategories = Array.from(categoryCheckboxes)
       .filter((cb) => cb.checked)
       .map((cb) => cb.value);
     const selectedBrands = Array.from(brandCheckboxes)
+      .filter((cb) => cb.checked)
+      .map((cb) => cb.value);
+    const selectedUsages = Array.from(usageCheckboxes)
       .filter((cb) => cb.checked)
       .map((cb) => cb.value);
     const inStockOnly = inStockCheckbox?.checked || false;
@@ -901,9 +948,12 @@ async function initSearchPage() {
       const matchesBrand =
         selectedBrands.length === 0 || selectedBrands.includes(product.brand?.toLowerCase());
 
+      const matchesUsage =
+        selectedUsages.length === 0 || selectedUsages.includes(product.usage);
+
       const matchesStock = !inStockOnly || product.stock > 0;
 
-      return matchesKeyword && matchesPrice && matchesCategory && matchesBrand && matchesStock;
+      return matchesKeyword && matchesPrice && matchesCategory && matchesBrand && matchesUsage && matchesStock;
     });
 
     if (sortBy === "price-low-high") {
@@ -948,6 +998,9 @@ async function initSearchPage() {
     checkbox.addEventListener("change", renderFilteredResults);
   });
   brandCheckboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", renderFilteredResults);
+  });
+  usageCheckboxes.forEach((checkbox) => {
     checkbox.addEventListener("change", renderFilteredResults);
   });
   if (inStockCheckbox) {
