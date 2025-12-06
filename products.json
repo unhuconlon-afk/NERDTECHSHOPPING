@@ -1077,5 +1077,51 @@
       "165 Degree Recline",
       "Lifetime Frame Warranty"
     ]
+  },
+  {
+    "id": 21,
+    "name": "Laptop gaming ASUS TUF Gaming F16 FX607VJ RL034W",
+    "price": 23490000,
+    "originalPrice": 24490000,
+    "image": "assets/images/ASUS-TUF-Gaming-F16-FX607VJ-RL034W.jpg",
+    "description": "ASUS TUF Gaming F16 FX607VJ RL034W có hiệu năng mạnh với CPU Intel Core 5 210H + GPU NVIDIA GeForce RTX 3050, RAM 16 GB + SSD 512 GB, màn hình 144 Hz, phù hợp chơi game và làm việc đa nhiệm.",
+    "stock": 4,
+    "category": "laptop",
+    "brand": "ASUS",
+    "usage": "Gaming",
+    "specs": [
+      "Core 5 210H",
+      "RTX 3050",
+      "16 GB RAM", 
+      "512 GB SSD",
+      "144 Hz Display"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Laptop gaming ASUS TUF Gaming F16 FX608JH RV039W",
+    "price": 30990000,
+    "originalPrice": 33390000,
+    "image": "assets/images/asus_tuf_gaming_f16_04_l_1_7e796bbd4cad429a873f4d6545b64039_master.jpg",
+    "description": "ASUS TUF Gaming F16 FX608JH-RV039W mang lại sức mạnh chơi game vượt trội với i5-13450HX kết hợp RTX 5050, cho trải nghiệm mượt mà trên màn hình 165Hz.",
+    "stock": 7,
+    "category": "laptop",
+    "brand": "ASUS",
+    "usage": "Gaming",
+    "specs": [
+      "i5-13450HX",
+      "RTX 5050",
+      "16 GB RAM",
+      "1 TB SSD",
+      "165 Hz Display"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Tai nghe Steelseries Arctis Nova 7 Dragon Edition",
+    "price": 3990000,
+    "originalPrice": 6990000,
+    "image": "assets/images/tainghesteelseriesarctisnova7.jpg",
+    "description": "Tai nghe gaming không dây, pin 38 giờ, kết nối cùng lúc 2.4 GHz + Bluetooth, micro ClearCast Gen 2 khử ồn, thiết kế đỏ-vàng độc đáo với họa tiết rồng may mắn, thích hợp chơi game / nghe nhạc / gọi thoại."
   }
 ]
