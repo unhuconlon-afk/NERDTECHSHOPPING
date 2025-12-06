@@ -2,7 +2,7 @@
   {
     "id": 1,
     "name": "iPhone 15 Pro Max 256GB Titanium",
-    "price": 29990000,
+    "price": 23990000,
     "originalPrice": 34990000,
     "image": "assets/images/iphone-15-prm.jpg",
     "description": "Thiết kế khung Titan, Chip A17 Pro mạnh mẽ nhất thế giới smartphone.",
@@ -35,6 +35,665 @@
   },
   {
     "id": 3,
+    "name": "iPhone 17 Pro Max 256GB Titanium",
+    "price": 34990000,
+    "originalPrice": 36990000,
+    "image": "assets/images/gfafwarfweywtgeww23425432W5T5t.jpg",
+    "description": "Flagship 2025 với chip A19 Pro, thiết kế Titan thế hệ mới và camera zoom quang học vượt trội.",
+    "stock": 100,
+    "category": "phone",
+    "brand": "Apple",
+    "specs": [
+      "Apple A19 Pro",
+      "6.9\" LTPO OLED 120Hz",
+      "256GB NVMe",
+      "Camera 48MP Quad-Pixel"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "iPhone 17 Pro 128GB Titanium",
+    "price": 28990000,
+    "originalPrice": 30990000,
+    "image": "assets/images/3q49thq30tq3g7tq0384t80bgf.jpg",
+    "description": "Hiệu năng đỉnh cao A19 Pro trong kích thước 6.3 inch, viền màn hình siêu mỏng.",
+    "stock": 80,
+    "category": "phone",
+    "brand": "Apple",
+    "specs": [
+      "Apple A19 Pro",
+      "6.3\" LTPO OLED 120Hz",
+      "128GB NVMe",
+      "Camera 48MP"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "iPhone 17 128GB",
+    "price": 22990000,
+    "originalPrice": 24990000,
+    "image": "assets/images/2wq3t298Tqheqwfewt.jpg",
+    "description": "Trải nghiệm mượt mà với màn hình 120Hz ProMotion lần đầu tiên trên dòng tiêu chuẩn, chip A19.",
+    "stock": 150,
+    "category": "phone",
+    "brand": "Apple",
+    "specs": [
+      "Apple A19",
+      "6.3\" OLED 120Hz",
+      "128GB NVMe",
+      "Camera 48MP"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "iPhone 16 Pro Max 256GB Titanium",
+    "price": 29490000,
+    "originalPrice": 34990000,
+    "image": "assets/images/1v439587gch1234242rg2bf.jpg",
+    "description": "Màn hình lớn 6.9 inch, nút Capture Button chuyên nghiệp, chip A18 Pro vẫn cực kỳ mạnh mẽ.",
+    "stock": 45,
+    "category": "phone",
+    "brand": "Apple",
+    "specs": [
+      "Apple A18 Pro",
+      "6.9\" LTPO OLED 120Hz",
+      "256GB NVMe",
+      "Camera 48MP"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Iphone 16 Pro Max 256GB Titanium",
+    "price": 24990000,
+    "originalPrice": 28990000,
+    "image": "assets/images/iphone-16-pro-max-white-titanium.jpg",
+    "description": "Thiết kế gọn gàng, camera tele 5x, hỗ trợ Apple Intelligence tối ưu.",
+    "stock": 60,
+    "category": "phone",
+    "brand": "Apple",
+    "specs": [
+      "Apple A18 Pro",
+      "6.3\" LTPO OLED 120Hz",
+      "128GB NVMe",
+      "Camera 48MP"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "iPhone 16 128GB",
+    "price": 18990000,
+    "originalPrice": 22990000,
+    "image": "assets/images/12319o24h185h1385h135h1i5.jpg",
+    "description": "Thiết kế camera dọc, nút Action Button tiện lợi, chip A18 hiệu năng cao.",
+    "stock": 120,
+    "category": "phone",
+    "brand": "Apple",
+    "specs": [
+      "Apple A18",
+      "6.1\" OLED 60Hz",
+      "128GB NVMe",
+      "Camera 48MP"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Xiaomi Redmi Note 14 Pro 5G 8GB/256GB",
+    "price": 7920000,
+    "originalPrice": 9320000,
+    "image": "assets/images/redmi-note-14-pro-plus-xanh.jpg",
+    "description": "Flagship mới nhất từ Xiaomi với camera hợp tác cùng Leica, màn hình sáng nhất thế giới.",
+    "stock": 15,
+    "category": "phone",
+    "brand": "Xiaomi",
+    "specs": [
+      "Snapdragon 8 Gen 3",
+      "16GB RAM",
+      "512GB Storage",
+      "Leica Camera System"
+    ]
+  },
+  {
+    "id": 100,
+    "name": "VGA ASUS ROG Strix GeForce RTX 5090",
+    "price": 68000000,
+    "originalPrice": 70000000,
+    "image": "assets/images/vga-rtx-5090.jpg",
+    "description": "Siêu phẩm card đồ họa 2025, chiến game 8K mượt mà.",
+    "stock": 2,
+    "category": "vga",
+    "brand": "ASUS",
+    "specs": [
+      "32GB GDDR7",
+      "PCIe 5.0",
+      "DLSS 4.0",
+      "3.5 Slot Design"
+    ]
+  },
+  {
+    "id": 101,
+    "name": "VGA MSI RTX 4060 Ventus 2X",
+    "price": 8199000,
+    "originalPrice": 9000000,
+    "image": "assets/images/vga-4060.jpg",
+    "description": "Card đồ họa tầm trung tốt nhất cho cấu hình Gaming 15 triệu.",
+    "stock": 40,
+    "category": "vga",
+    "brand": "MSI",
+    "specs": [
+      "8GB GDDR6",
+      "DLSS 3",
+      "Dual Fan",
+      "Low Power"
+    ]
+  },
+  {
+    "id": 103,
+    "name": "MSI Gaming X Trio GeForce RTX 5080 24GB",
+    "price": 42990000,
+    "originalPrice": 45990000,
+    "image": "assets/images/1024__1__50998d1a331f4228ab32dd838a7e5f68.jpg",
+    "description": "Hiệu năng chơi game 4K đỉnh cao, hệ thống LED RGB Mystic Light.",
+    "stock": 25,
+    "category": "vga",
+    "brand": "MSI",
+    "specs": [
+      "NVIDIA RTX 5080",
+      "24GB GDDR7",
+      "384-bit",
+      "DLSS 4.0"
+    ]
+  },
+  {
+    "id": 104,
+    "name": "ASUS ROG Strix GeForce RTX 4090 OC Edition",
+    "price": 62990000,
+    "originalPrice": 66000000,
+    "image": "assets/images/vga-asus-rog-strix-geforce-rtx-4090-oc-edition-24gb-gddr6x-.jpg",
+    "description": "Card đồ họa mạnh nhất thế giới, thiết kế khung đúc Diecast, LED ARGB bao quanh.",
+    "stock": 5,
+    "category": "vga",
+    "brand": "ASUS",
+    "usage": "Hardcore Gaming/AI",
+    "chipset": "RTX 4090",
+    "specs": [
+      "24GB GDDR6X",
+      "384-bit Memory Interface",
+      "Xung nhịp 2640 MHz",
+      "3.5 Slot Cooler"
+    ]
+  },
+  {
+    "id": 105,
+    "name": "MSI Gaming X Slim GeForce RTX 4070 SUPER",
+    "price": 21500000,
+    "originalPrice": 23900000,
+    "image": "assets/images/msi-rtx-4070-super_0009_1024_49472e4d0e7448b9abf093f1ed480cfc.jpg",
+    "description": "Thiết kế mỏng nhẹ hơn nhưng vẫn giữ hiệu năng cao, hệ thống tản nhiệt Tri Frozr 3.",
+    "stock": 15,
+    "category": "vga",
+    "brand": "MSI",
+    "usage": "Gaming 2K",
+    "chipset": "RTX 4070 Super",
+    "specs": [
+      "12GB GDDR6X",
+      "192-bit Memory Interface",
+      "DLSS 3.5 Support",
+      "Torx Fan 5.0"
+    ]
+  },
+  {
+    "id": 106,
+    "name": "Gigabyte AORUS GeForce RTX 4080 SUPER Master",
+    "price": 35990000,
+    "originalPrice": 38990000,
+    "image": "assets/images/vga-gigabyte-geforce-rtx-4080-super-aorus-master-16gb-gddr6x-gv-n408saorus-m-16gd-.jpg",
+    "description": "Màn hình LCD Edge View hiển thị thông số, quạt RGB Halo ấn tượng.",
+    "stock": 8,
+    "category": "vga",
+    "brand": "Gigabyte",
+    "usage": "Gaming 4K",
+    "chipset": "RTX 4080 Super",
+    "specs": [
+      "16GB GDDR6X",
+      "256-bit Memory Interface",
+      "Windforce Bionic Shark",
+      "LCD Edge View"
+    ]
+  },
+  {
+    "id": 107,
+    "name": "Colorful iGame GeForce RTX 4060 Ti Ultra W",
+    "price": 11990000,
+    "originalPrice": 13500000,
+    "image": "assets/images/h1494g1934g1943g134g194g.jpg",
+    "description": "Phong cách Pop-art màu trắng độc đáo, phù hợp build PC trắng.",
+    "stock": 25,
+    "category": "vga",
+    "brand": "Colorful",
+    "usage": "Gaming 1080p/Design",
+    "chipset": "RTX 4060 Ti",
+    "specs": [
+      "8GB GDDR6",
+      "128-bit Memory Interface",
+      "3 Quạt tản nhiệt",
+      "Nút Turbo One-Key"
+    ]
+  },
+  {
+    "id": 108,
+    "name": "ASUS Dual GeForce RTX 3060 V2 OC",
+    "price": 7490000,
+    "originalPrice": 8500000,
+    "image": "assets/images/vga-asus-dual-geforce-rtx-3060-v2-oc-edition-12gb-gddr6-dual-rtx3060-o12g-v2.jpg",
+    "description": "VRAM lớn 12GB giá rẻ, tối ưu cho cả chơi game và render video.",
+    "stock": 40,
+    "category": "vga",
+    "brand": "ASUS",
+    "usage": "Gaming/Rendering",
+    "chipset": "RTX 3060",
+    "specs": [
+      "12GB GDDR6",
+      "192-bit Memory Interface",
+      "2 Quạt Axial-tech",
+      "0dB Technology"
+    ]
+  },
+  {
+    "id": 109,
+    "name": "ASUS TUF Gaming GeForce RTX 4080 SUPER 16GB",
+    "price": 31990000,
+    "originalPrice": 34990000,
+    "image": "assets/images/asus-rtx-4080s.jpg",
+    "description": "Độ bền chuẩn quân đội, tụ điện cao cấp, hoạt động bền bỉ.",
+    "stock": 40,
+    "category": "vga",
+    "brand": "ASUS",
+    "specs": [
+      "NVIDIA RTX 4080 Super",
+      "16GB GDDR6X",
+      "256-bit",
+      "Metal Backplate"
+    ]
+  },
+  {
+    "id": 110,
+    "name": "ZOTAC GAMING GeForce RTX 4070 Ti SUPER Trinity",
+    "price": 23990000,
+    "originalPrice": 25990000,
+    "image": "assets/images/zotac-rtx-4070tis.jpg",
+    "description": "Thiết kế IceStorm 2.0 làm mát hiệu quả, kích thước tối ưu cho case mid-tower.",
+    "stock": 50,
+    "category": "vga",
+    "brand": "ZOTAC",
+    "specs": [
+      "NVIDIA RTX 4070 Ti Super",
+      "16GB GDDR6X",
+      "256-bit",
+      "Spectra 2.0 RGB"
+    ]
+  },
+  {
+    "id": 111,
+    "name": "MSI Ventus 2X GeForce RTX 4070 SUPER 12GB",
+    "price": 17990000,
+    "originalPrice": 19500000,
+    "image": "assets/images/msi-rtx-4070s.jpg",
+    "description": "Thiết kế 2 quạt nhỏ gọn, phù hợp cho các bộ PC Gaming ITX hoặc mATX.",
+    "stock": 65,
+    "category": "vga",
+    "brand": "MSI",
+    "specs": [
+      "NVIDIA RTX 4070 Super",
+      "12GB GDDR6X",
+      "192-bit",
+      "Torx Fan 4.0"
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Colorful iGame GeForce RTX 4060 Ti Ultra W 16GB",
+    "price": 13590000,
+    "originalPrice": 14900000,
+    "image": "assets/images/colorful-rtx-4060ti.jpg",
+    "description": "Phiên bản màu trắng phong cách Pop-art, VRAM lớn 16GB hỗ trợ tốt đồ họa AI.",
+    "stock": 30,
+    "category": "vga",
+    "brand": "Colorful",
+    "specs": [
+      "NVIDIA RTX 4060 Ti",
+      "16GB GDDR6",
+      "128-bit",
+      "White Theme"
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Gigabyte Eagle GeForce RTX 4060 OC 8GB",
+    "price": 8290000,
+    "originalPrice": 9500000,
+    "image": "assets/images/gigabyte-rtx-4060.jpg",
+    "description": "Card đồ họa quốc dân thế hệ mới, chiến mượt mọi game 1080p.",
+    "stock": 120,
+    "category": "vga",
+    "brand": "Gigabyte",
+    "specs": [
+      "NVIDIA RTX 4060",
+      "8GB GDDR6",
+      "128-bit",
+      "Windforce 2X"
+    ]
+  },
+  {
+    "id": 114,
+    "name": "ASUS Dual GeForce RTX 3060 V2 OC 12GB",
+    "price": 7590000,
+    "originalPrice": 8900000,
+    "image": "assets/images/asus-rtx-3060.jpg",
+    "description": "VRAM 12GB lớn trong tầm giá, lựa chọn tốt nhất cho render video ngân sách thấp.",
+    "stock": 200,
+    "category": "vga",
+    "brand": "ASUS",
+    "specs": [
+      "NVIDIA RTX 3060",
+      "12GB GDDR6",
+      "192-bit",
+      "0dB Technology"
+    ]
+  },
+  {
+    "id": 115,
+    "name": "MSI GeForce RTX 3050 Ventus 2X XS 8GB",
+    "price": 5990000,
+    "originalPrice": 6500000,
+    "image": "assets/images/msi-rtx-3050.jpg",
+    "description": "Card đồ họa nhập môn Ray Tracing, thay thế hoàn hảo cho các dòng GTX cũ.",
+    "stock": 85,
+    "category": "vga",
+    "brand": "MSI",
+    "specs": [
+      "NVIDIA RTX 3050",
+      "8GB GDDR6",
+      "128-bit",
+      "DLSS Support"
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Galax GeForce RTX 4090 SG (1-Click OC) 24GB",
+    "price": 51990000,
+    "originalPrice": 55000000,
+    "image": "assets/images/galax-rtx-4090.jpg",
+    "description": "Dòng Serious Gaming với quạt phụ gắn lưng độc đáo, hiệu năng/giá thành tốt.",
+    "stock": 12,
+    "category": "vga",
+    "brand": "Galax",
+    "specs": [
+      "NVIDIA RTX 4090",
+      "24GB GDDR6X",
+      "384-bit",
+      "Clip-on Fan"
+    ]
+  },
+  {
+    "id": 117,
+    "name": "ASUS ProArt GeForce RTX 4070 Ti SUPER 16GB",
+    "price": 26990000,
+    "originalPrice": 28990000,
+    "image": "assets/images/asus-proart-4070tis.jpg",
+    "description": "Thiết kế tối giản sang trọng, tối ưu driver Studio cho dân thiết kế đồ họa.",
+    "stock": 18,
+    "category": "vga",
+    "brand": "ASUS",
+    "specs": [
+      "NVIDIA RTX 4070 Ti Super",
+      "16GB GDDR6X",
+      "256-bit",
+      "Creator Ready"
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Gigabyte Gaming OC GeForce RTX 3070 Ti 8GB",
+    "price": 11500000,
+    "originalPrice": 18500000,
+    "image": "assets/images/gigabyte-rtx-3070ti.jpg",
+    "description": "Hiệu năng 2K mạnh mẽ, phiên bản Gaming OC xung nhịp cao.",
+    "stock": 8,
+    "category": "vga",
+    "brand": "Gigabyte",
+    "specs": [
+      "NVIDIA RTX 3070 Ti",
+      "8GB GDDR6X",
+      "256-bit",
+      "RGB Fusion"
+    ]
+  },
+  {
+    "id": 119,
+    "name": "ASUS ROG Strix GeForce RTX 3080 Gundam Edition",
+    "price": 22000000,
+    "originalPrice": 35000000,
+    "image": "assets/images/asus-rtx-3080-gundam.jpg",
+    "description": "Phiên bản giới hạn Gundam, dành cho fan sưu tầm và build PC theo chủ đề.",
+    "stock": 2,
+    "category": "vga",
+    "brand": "ASUS",
+    "specs": [
+      "NVIDIA RTX 3080",
+      "10GB GDDR6X",
+      "320-bit",
+      "Limited Edition"
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Inno3D GeForce GTX 1650 Twin X2 OC 4GB",
+    "price": 3590000,
+    "originalPrice": 4200000,
+    "image": "assets/images/inno3d-gtx-1650.jpg",
+    "description": "Giải pháp giá rẻ cho game Esports, không cần nguồn phụ.",
+    "stock": 150,
+    "category": "vga",
+    "brand": "Inno3D",
+    "specs": [
+      "NVIDIA GTX 1650",
+      "4GB GDDR6",
+      "128-bit",
+      "Low Profile"
+    ]
+  },
+  {
+    "id": 121,
+    "name": "PowerColor Hellhound AMD Radeon RX 7800 XT",
+    "price": 15500000,
+    "originalPrice": 16900000,
+    "image": "assets/images/powercolor-7800xt.jpg",
+    "description": "Quái vật hiệu năng 1440p từ AMD, LED mắt quỷ đặc trưng có thể đổi màu.",
+    "stock": 20,
+    "category": "vga",
+    "brand": "PowerColor",
+    "usage": "Gaming 2K High FPS",
+    "chipset": "RX 7800 XT",
+    "specs": [
+      "16GB GDDR6",
+      "256-bit Memory Interface",
+      "Dual BIOS",
+      "Amethyst LED"
+    ]
+  },
+  {
+    "id": 122,
+    "name": "MSI GeForce RTX 4080 SUPER SUPRIM X",
+    "price": 38990000,
+    "originalPrice": 42000000,
+    "image": "assets/images/msi-suprim-4080s.jpg",
+    "description": "Dòng cao cấp nhất của MSI, mặt nhôm phay xước sang trọng, tản nhiệt cực mát.",
+    "stock": 5,
+    "category": "vga",
+    "brand": "MSI",
+    "usage": "Premium Gaming/AI",
+    "chipset": "RTX 4080 Super",
+    "specs": [
+      "16GB GDDR6X",
+      "256-bit Memory Interface",
+      "Tri Frozr 3S",
+      "Diamond Logo RGB"
+    ]
+  },
+  {
+    "id": 123,
+    "name": "ASRock Intel Arc A770 Phantom Gaming D 8GB",
+    "price": 8990000,
+    "originalPrice": 9900000,
+    "image": "assets/images/asrock-a770.jpg",
+    "description": "Làn gió mới từ Intel, hiệu năng mã hóa video AV1 cực tốt cho Streamer.",
+    "stock": 30,
+    "category": "vga",
+    "brand": "ASRock",
+    "usage": "Streaming/Editing",
+    "chipset": "Intel Arc A770",
+    "specs": [
+      "8GB GDDR6",
+      "256-bit Memory Interface",
+      "XeSS AI Upscaling",
+      "Polychrome SYNC"
+    ]
+  },
+  {
+    "id": 124,
+    "name": "Gigabyte GeForce RTX 4060 Ti AERO OC 16GB",
+    "price": 14290000,
+    "originalPrice": 15500000,
+    "image": "assets/images/gigabyte-4060ti-aero.jpg",
+    "description": "Thiết kế trắng bạc hiện đại, VRAM 16GB tối ưu cho sáng tạo nội dung.",
+    "stock": 18,
+    "category": "vga",
+    "brand": "Gigabyte",
+    "usage": "Creator/White PC Build",
+    "chipset": "RTX 4060 Ti",
+    "specs": [
+      "16GB GDDR6",
+      "128-bit Memory Interface",
+      "Screen Cooling",
+      "Creator Drivers"
+    ]
+  },
+  {
+    "id": 125,
+    "name": "Sapphire PURE AMD Radeon RX 7700 XT",
+    "price": 12500000,
+    "originalPrice": 13900000,
+    "image": "assets/images/sapphire-pure-7700xt.jpg",
+    "description": "Phiên bản màu trắng tinh khôi, quạt Angular Velocity Fan Blade êm ái.",
+    "stock": 25,
+    "category": "vga",
+    "brand": "Sapphire",
+    "usage": "Gaming 1440p",
+    "chipset": "RX 7700 XT",
+    "specs": [
+      "12GB GDDR6",
+      "192-bit Memory Interface",
+      "Red LED Logo",
+      "High Polymer Capacitor"
+    ]
+  },
+  {
+    "id": 126,
+    "name": "ASUS ProArt GeForce RTX 4060 OC Edition",
+    "price": 9500000,
+    "originalPrice": 10500000,
+    "image": "assets/images/asus-proart-4060.jpg",
+    "description": "Thiết kế tối giản, thanh lịch, nhỏ gọn 2.5 slot cho các case workstation.",
+    "stock": 40,
+    "category": "vga",
+    "brand": "ASUS",
+    "usage": "Professional Design",
+    "chipset": "RTX 4060",
+    "specs": [
+      "8GB GDDR6",
+      "128-bit Memory Interface",
+      "0dB Tech",
+      "Auto-Extreme"
+    ]
+  },
+  {
+    "id": 127,
+    "name": "PNY GeForce RTX 4070 Ti SUPER XLR8 Gaming Verto",
+    "price": 24500000,
+    "originalPrice": 26000000,
+    "image": "assets/images/pny-4070tis.jpg",
+    "description": "Hệ thống LED RGB Epic-X độc đáo, hiệu năng ổn định giá tốt.",
+    "stock": 15,
+    "category": "vga",
+    "brand": "PNY",
+    "usage": "Gaming/VR",
+    "chipset": "RTX 4070 Ti Super",
+    "specs": [
+      "16GB GDDR6X",
+      "256-bit Memory Interface",
+      "VelocityX Software",
+      "EPIC-X RGB"
+    ]
+  },
+  {
+    "id": 128,
+    "name": "ZOTAC GAMING GeForce RTX 3050 Solo",
+    "price": 5200000,
+    "originalPrice": 5900000,
+    "image": "assets/images/zotac-3050-solo.jpg",
+    "description": "Thiết kế 1 quạt siêu nhỏ gọn, giải pháp nâng cấp tuyệt vời cho case ITX.",
+    "stock": 60,
+    "category": "vga",
+    "brand": "ZOTAC",
+    "usage": "Mini PC/Home Theater",
+    "chipset": "RTX 3050",
+    "specs": [
+      "8GB GDDR6",
+      "128-bit Memory Interface",
+      "Single Fan",
+      "No External Power"
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Gigabyte GeForce GTX 1660 SUPER OC 6G",
+    "price": 4990000,
+    "originalPrice": 5500000,
+    "image": "assets/images/gigabyte-1660s.jpg",
+    "description": "Huyền thoại phân khúc tầm trung, vẫn chiến tốt các game eSports hiện nay.",
+    "stock": 90,
+    "category": "vga",
+    "brand": "Gigabyte",
+    "usage": "Esports Gaming",
+    "chipset": "GTX 1660 Super",
+    "specs": [
+      "6GB GDDR6",
+      "192-bit Memory Interface",
+      "Windforce 2X",
+      "Protection Backplate"
+    ]
+  },
+  {
+    "id": 130,
+    "name": "ASUS Dual Radeon RX 6500 XT OC Edition",
+    "price": 4200000,
+    "originalPrice": 4800000,
+    "image": "assets/images/asus-rx6500xt.jpg",
+    "description": "Giải pháp tiết kiệm nhất để chơi game 1080p settings trung bình.",
+    "stock": 55,
+    "category": "vga",
+    "brand": "ASUS",
+    "usage": "Entry Level Gaming",
+    "chipset": "RX 6500 XT",
+    "specs": [
+      "4GB GDDR6",
+      "64-bit Memory Interface",
+      "IP5X Dust Resistance",
+      "Compact Design"
+    ]
+  },
+  {
+    "id": 200,
     "name": "ASUS ROG Strix G16 (2024)",
     "price": 49000000,
     "originalPrice": 51000000,
@@ -53,7 +712,7 @@
     ]
   },
   {
-    "id": 4,
+    "id": 201,
     "name": "MacBook Air M3 13 inch",
     "price": 27990000,
     "originalPrice": 30000000,
@@ -71,7 +730,7 @@
     ]
   },
   {
-    "id": 5,
+    "id": 202,
     "name": "ACER Nitro V 15",
     "price": 19990000,
     "originalPrice": 22000000,
@@ -90,41 +749,44 @@
     ]
   },
   {
-    "id": 6,
-    "name": "VGA ASUS ROG Strix GeForce RTX 5090",
-    "price": 68000000,
-    "originalPrice": 70000000,
-    "image": "assets/images/vga-rtx-5090.jpg",
-    "description": "Siêu phẩm card đồ họa 2025, chiến game 8K mượt mà.",
-    "stock": 2,
-    "category": "vga",
-    "brand": "ASUS",
-    "specs": [
-      "32GB GDDR7",
-      "PCIe 5.0",
-      "DLSS 4.0",
-      "3.5 Slot Design"
-    ]
-  },
-  {
-    "id": 7,
-    "name": "VGA MSI RTX 4060 Ventus 2X",
-    "price": 8199000,
-    "originalPrice": 9000000,
-    "image": "assets/images/vga-4060.jpg",
-    "description": "Card đồ họa tầm trung tốt nhất cho cấu hình Gaming 15 triệu.",
-    "stock": 40,
-    "category": "vga",
+    "id": 203,
+    "name": "Laptop MSI Katana 17 ( i7-13620H / RTX 4060 / 16GB RAM / 1TB SSD )",
+    "price": 29990000,
+    "originalPrice": 35500000,
+    "image": "assets/images/rog-g16.jpg",
+    "description": "Dòng laptop gaming chủ lực của MSI. Màn hình lớn 17.3 inch, chip H hiệu năng cao và card đồ họa RTX 4060 mới nhất, đáp ứng hoàn hảo nhu cầu gaming và đồ họa di động.",
+    "stock": 7,
+    "category": "laptop",
     "brand": "MSI",
+    "usage": "Gaming",
     "specs": [
-      "8GB GDDR6",
-      "DLSS 3",
-      "Dual Fan",
-      "Low Power"
+      "Core i7-13620H",
+      "RTX 4060 8GB Laptop GPU",
+      "16GB RAM DDR5",
+      "1TB SSD NVMe Gen4",
+      "Màn hình 17.3 inch FHD (1920x1080) 144Hz"
     ]
   },
   {
-    "id": 8,
+    "id": 204,
+    "name": "Dell XPS 15 9530",
+    "price": 34990000,
+    "originalPrice": 40000000,
+    "image": "assets/images/dell-xps-15-9530-i7-71015716-thumb-600x600.jpg",
+    "description": "Laptop doanh nhân cao cấp với màn hình OLED 3.5K cảm ứng, thiết kế vỏ nhôm sang trọng.",
+    "stock": 11,
+    "category": "laptop",
+    "brand": "DELL",
+    "usage": "Office",
+    "specs": [
+      "Core i7-13700H",
+      "16GB DDR5 4800MHz",
+      "1TB SSD NVMe Gen4",
+      "15.6\" OLED 3.5K Touch"
+    ]
+  },
+  {
+    "id": 300,
     "name": "CPU Intel Core i9-14900K",
     "price": 12900000,
     "originalPrice": 16000000,
@@ -141,7 +803,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 301,
     "name": "CPU AMD Ryzen 7 7800X3D",
     "price": 9900000,
     "originalPrice": 11000000,
@@ -158,7 +820,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 400,
     "name": "Mainboard ASUS TUF GAMING B760M-PLUS WIFI",
     "price": 4200000,
     "originalPrice": 5000000,
@@ -175,7 +837,7 @@
     ]
   },
   {
-    "id": 11,
+    "id": 500,
     "name": "RAM Corsair Vengeance RGB 32GB (2x16GB) DDR5",
     "price": 8999000,
     "originalPrice": 12000000,
@@ -192,7 +854,7 @@
     ]
   },
   {
-    "id": 12,
+    "id": 600,
     "name": "SSD Samsung 990 PRO 1TB NVMe",
     "price": 4999000,
     "originalPrice": 8000000,
@@ -209,8 +871,8 @@
     ]
   },
   {
-    "id": 13,
-    "name": "PC NT Hot Summer (CPU i5-12400F / VGA RTX 4060)",
+    "id": 700,
+    "name": "PC GVN Hot Summer (CPU i5-12400F / VGA RTX 4060)",
     "price": 22000000,
     "originalPrice": 30000000,
     "image": "assets/images/pc-gvn-summer.jpg",
@@ -226,8 +888,8 @@
     ]
   },
   {
-    "id": 14,
-    "name": "PC NT Super Luxury ( CPU i9-14900K / VGA RTX 5090 / 64GB RAM / 2TB SSD )",
+    "id": 701,
+    "name": "PC GVN Super Luxury ( CPU i9-14900K / VGA RTX 5090 / 64GB RAM / 2TB SSD )",
     "price": 129900000,
     "originalPrice": 180000000,
     "image": "assets/images/pc-gvn-luxury1.jpg",
@@ -243,7 +905,75 @@
     ]
   },
   {
-    "id": 15,
+    "id": 702,
+    "name": "PC GVN Budget Legend ( CPU i3-12100F / VGA GTX 1080Ti / 16GB RAM / 500GB SSD )",
+    "price": 11990000,
+    "originalPrice": 14500000,
+    "image": "assets/images/pc-nt-legend.jpg",
+    "description": "Sự kết hợp giữa CPU quốc dân i3-12100F và huyền thoại đồ họa GTX 1080Ti 11GB, mang lại hiệu năng chiến game ngon trong tầm giá, cân tốt các tựa game eSport và AAA Full HD.",
+    "stock": 5,
+    "category": "pc_gvn",
+    "brand": "GVN",
+    "specs": [
+      "Core i3-12100F",
+      "GTX 1080Ti 11GB",
+      "16GB RAM DDR4",
+      "500GB SSD NVMe"
+    ]
+  },
+  {
+    "id": 703,
+    "name": "PC GVN Master ( CPU i7-14700K / VGA RTX 4080 / 32GB RAM / 1TB SSD )",
+    "price": 68990000,
+    "originalPrice": 75500000,
+    "image": "assets/images/pc-nt-master.jpg",
+    "description": "Cỗ máy chiến game High-End trang bị i7-14700K đa nhân đa luồng cùng sức mạnh đồ họa RTX 4080 16GB. Sẵn sàng cho trải nghiệm Gaming 4K mượt mà và xử lý đồ họa chuyên nghiệp.",
+    "stock": 3,
+    "category": "pc_gvn",
+    "brand": "GVN",
+    "specs": [
+      "Core i7-14700K",
+      "RTX 4080 16GB",
+      "32GB RAM DDR5",
+      "1TB SSD Gen4"
+    ]
+  },
+  {
+    "id": 704,
+    "name": "PC GVN Budget ( CPU Ryzen 3 4100 / VGA GTX 1650 / 16GB RAM / 256GB SSD )",
+    "price": 9490000,
+    "originalPrice": 11500000,
+    "image": "assets/images/pc-gvn-budget.jpg",
+    "description": "Giải pháp Gaming tiết kiệm với CPU AMD Ryzen 3 4100 4 nhân 8 luồng kết hợp card đồ họa quốc dân GTX 1650. Cân tốt các tựa game Esports phổ biến như League of Legends, Valorant, CS2.",
+    "stock": 10,
+    "category": "pc_gvn",
+    "brand": "GVN",
+    "specs": [
+      "Ryzen 3 4100",
+      "GTX 1650 4GB",
+      "16GB RAM DDR4",
+      "256GB SSD NVMe"
+    ]
+  },
+  {
+    "id": 705,
+    "name": "PC GVN Gaming ( CPU Ryzen 5 5600X / VGA RTX 4060 / 16GB RAM / 512GB SSD )",
+    "price": 19490000,
+    "originalPrice": 22500000,
+    "image": "assets/images/pc-gvn-summer.jpg",
+    "description": "Combo 'Quốc Dân' tầm trung với Ryzen 5 5600X xung nhịp cao và RTX 4060 công nghệ DLSS 3. Cân tốt mọi game AAA ở High Setting và hỗ trợ Render video/Stream nhẹ nhàng.",
+    "stock": 8,
+    "category": "pc_gvn",
+    "brand": "GVN",
+    "specs": [
+      "Ryzen 5 5600X",
+      "RTX 4060 8GB",
+      "16GB RAM DDR4 3200MHz",
+      "512GB SSD NVMe Gen4"
+    ]
+  },
+  {
+    "id": 800,
     "name": "Màn hình LG UltraGear 27GR75Q-B",
     "price": 6500000,
     "originalPrice": 7900000,
@@ -260,7 +990,7 @@
     ]
   },
   {
-    "id": 16,
+    "id": 801,
     "name": "Màn hình ASUS ProArt PA248QV",
     "price": 4500000,
     "originalPrice": 7000000,
@@ -277,7 +1007,7 @@
     ]
   },
   {
-    "id": 17,
+    "id": 900,
     "name": "Chuột Logitech G Pro X Superlight 2",
     "price": 3290000,
     "originalPrice": 3600000,
@@ -295,7 +1025,7 @@
     ]
   },
   {
-    "id": 18,
+    "id": 1000,
     "name": "Bàn phím Akko 5075B Plus Naruto",
     "price": 2400000,
     "originalPrice": 2800000,
@@ -314,7 +1044,7 @@
     ]
   },
   {
-    "id": 19,
+    "id": 1100,
     "name": "Tai nghe HyperX Cloud II",
     "price": 1800000,
     "originalPrice": 2500000,
@@ -332,7 +1062,7 @@
     ]
   },
   {
-    "id": 20,
+    "id": 1200,
     "name": "Ghế Gaming Anda Seat Kaiser 3",
     "price": 8500000,
     "originalPrice": 10000000,

@@ -123,13 +123,15 @@ img {
   top: 0;
   left: 0;
   bottom: 0;
-  width: 260px;
+  width: 80%;
+  max-width: 320px;
   background-color: #ffffff;
   box-shadow: 2px 0 20px rgba(0, 0, 0, 0.2);
   padding: 16px;
   transform: translateX(-100%);
   transition: transform 0.25s ease;
   z-index: 1000;
+  overflow-y: auto;
 }
 
 .mobile-drawer.active {
@@ -370,15 +372,17 @@ img {
 
 .mobile-drawer {
   position: fixed;
-  left: -280px;
+  left: 0;
   top: 0;
-  width: 280px;
+  width: 80%;
+  max-width: 320px;
   height: 100vh;
   background-color: #ffffff;
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
   z-index: 999;
-  transition: left 0.3s ease;
+  transition: transform 0.3s ease;
   overflow-y: auto;
+  transform: translateX(-100%);
 }
 
 .mobile-drawer.active {
@@ -1017,7 +1021,7 @@ img {
   
   .sidebar-menu li.open .mega-panel {
     display: grid !important;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 0 20px; /* row-gap | column-gap */
   }
   
@@ -1060,6 +1064,12 @@ img {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     border-radius: 0;
+  }
+
+  .mobile-drawer .mega-column h3,
+  .mobile-drawer .mega-column a {
+    overflow-wrap: normal;
+    word-break: normal;
   }
 }
 
@@ -1652,298 +1662,34 @@ img {
     }
 }
 
+/* === DRAWER OVERRIDE FIX === */
+/* This rule is intentionally placed at the end to override all previous,
+   conflicting definitions of the mobile drawer due to file inconsistencies. */
 
-/* ==========================================================================
-   Product Detail Page Enhancement Styles
-   ========================================================================== */
-
-/* Breadcrumbs */
-.breadcrumbs {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 0.85rem;
-    color: #666;
-    margin-bottom: 24px;
-    padding-bottom: 16px;
-    border-bottom: 1px solid #f1f1f1;
-}
-.breadcrumbs a {
-    color: #333;
-    transition: color 0.2s ease;
-}
-.breadcrumbs a:hover {
-    color: #e00000;
-}
-.breadcrumbs i {
-    font-size: 0.7rem;
-}
-.breadcrumbs span {
-    font-weight: 600;
-    color: #e00000;
+body .mobile-drawer {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 80%;
+  max-width: 320px; /* Sensible max-width for tablets */
+  height: 100vh;
+  background-color: #ffffff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+  transform: translateX(-100%); /* Hide by default */
+  padding: 0; /* Reset padding to handle it internally */
 }
 
-/* Main Layout */
-.product-detail-layout {
-    display: grid;
-    grid-template-columns: 45% 1fr;
-    gap: 40px;
-    margin-bottom: 40px;
+body .mobile-drawer.active {
+  transform: translateX(0);
 }
 
-/* Image Gallery */
-.product-gallery {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+/* Reset padding on inner elements that had it before */
+body .mobile-drawer .drawer-header {
+  padding: 12px 14px;
 }
-.main-image-container {
-    border: 1px solid #ececec;
-    border-radius: 8px;
-    padding: 20px;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 1/1;
-}
-#main-product-image {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-.thumbnail-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-    gap: 10px;
-}
-.thumbnail-item {
-    border: 2px solid #ececec;
-    border-radius: 4px;
-    padding: 4px;
-    cursor: pointer;
-    transition: border-color 0.2s ease;
-    aspect-ratio: 1/1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.thumbnail-item:hover, .thumbnail-item.active {
-    border-color: #e00000;
-}
-.thumbnail-item img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    border-radius: 2px;
-}
-
-/* Product Info */
-.product-info {
-    display: flex;
-    flex-direction: column;
-}
-.product-title {
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 12px;
-    line-height: 1.3;
-}
-.product-meta {
-    display: flex;
-    gap: 20px;
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 16px;
-}
-.meta-item strong {
-    font-weight: 600;
-    color: #333;
-}
-.stock-status.in-stock {
-    color: #28a745;
-}
-.stock-status.out-of-stock {
-    color: #e00000;
-}
-
-/* Pricing */
-.pricing-section {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 16px;
-    margin-bottom: 20px;
-    border: 1px solid #f1f1f1;
-}
-.current-price {
-    font-size: 2rem;
-    font-weight: 800;
-    color: #e00000;
-    margin-right: 12px;
-}
-.original-price {
-    font-size: 1.2rem;
-    color: #888;
-    text-decoration: line-through;
-}
-
-/* Short Description */
-.short-description {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    color: #555;
-    margin-bottom: 24px;
-    border-top: 1px solid #f1f1f1;
-    padding-top: 20px;
-}
-
-/* Actions Section */
-.actions-section {
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    margin-top: auto; /* Pushes to bottom */
-    padding-top: 20px;
-    border-top: 1px solid #f1f1f1;
-}
-.quantity-selector {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-.quantity-selector button {
-    background: #f5f5f5;
-    border: none;
-    width: 38px;
-    height: 38px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-.quantity-selector button:hover {
-    background-color: #e0e0e0;
-}
-.quantity-selector input {
-    width: 50px;
-    height: 36px;
-    text-align: center;
-    border: none;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
-    font-size: 1rem;
-    font-weight: 600;
-}
-.add-to-cart-btn {
-    flex-grow: 1;
-    font-size: 1rem;
-    padding: 12px 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-}
-.add-to-cart-btn i {
-    font-size: 1.1rem;
-}
-
-
-/* Info Tabs */
-.product-info-tabs {
-    margin: 40px 0;
-}
-.tab-headers {
-    display: flex;
-    gap: 4px;
-    border-bottom: 2px solid #e0e0e0;
-}
-.tab-link {
-    padding: 12px 24px;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    border: none;
-    background: none;
-    color: #666;
-    position: relative;
-    bottom: -2px;
-    border-bottom: 2px solid transparent;
-    transition: color 0.2s ease, border-color 0.2s ease;
-}
-.tab-link.active {
-    color: #e00000;
-    border-color: #e00000;
-}
-.tab-content {
-    padding: 24px;
-    border: 1px solid #e0e0e0;
-    border-top: none;
-    border-radius: 0 0 8px 8px;
-}
-.tab-pane {
-    display: none;
-}
-.tab-pane.active {
-    display: block;
-}
-.tab-pane h2 {
-    margin-top: 0;
-    margin-bottom: 16px;
-    font-size: 1.4rem;
-}
-.specs-list {
-    list-style: none;
-    padding: 0;
-    max-width: 600px;
-}
-.specs-list li {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 12px;
-    border-bottom: 1px solid #f1f1f1;
-}
-.specs-list li:nth-child(odd) {
-    background-color: #f9f9f9;
-}
-.specs-list .spec-key {
-    font-weight: 600;
-    color: #333;
-}
-.specs-list .spec-value {
-    color: #555;
-}
-
-/* Related Products */
-.related-products {
-    margin-top: 40px;
-}
-.related-products h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-/* Responsive Styles */
-@media (max-width: 960px) {
-    .product-detail-layout {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-}
-
-@media (max-width: 768px) {
-    .product-title {
-        font-size: 1.5rem;
-    }
-    .current-price {
-        font-size: 1.8rem;
-    }
-    .actions-section {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .tab-link {
-        padding: 10px 16px;
-        font-size: 0.9rem;
-    }
+body .mobile-drawer .drawer-nav {
+  padding: 0;
 }
