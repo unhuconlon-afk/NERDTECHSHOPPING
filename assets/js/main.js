@@ -176,7 +176,7 @@ async function initHomePage() {
   // Handle Best-selling PCs with tabs
   const bestGrid = document.getElementById("best-selling-grid");
   if (bestGrid) {
-    const pcProducts = products.filter((p) => p.category === "pc");
+    const pcProducts = products.filter((p) => p.category === "pc_gvn");
 
     function renderByCpu(cpuTag) {
       bestGrid.innerHTML = "";
