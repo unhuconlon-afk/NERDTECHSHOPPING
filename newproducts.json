@@ -153,60 +153,6 @@
     ]
   },
   {
-    "id": 21,
-    "name": "Laptop gaming ASUS TUF Gaming F16 FX607VJ RL034W",
-    "price": 23490000,
-    "originalPrice": 24490000,
-    "image": "assets/images/ASUS-TUF-Gaming-F16-FX607VJ-RL034W.jpg",
-    "description": "ASUS TUF Gaming F16 FX607VJ RL034W có hiệu năng mạnh với CPU Intel Core 5 210H + GPU NVIDIA GeForce RTX 3050, RAM 16 GB + SSD 512 GB, màn hình 144 Hz, phù hợp chơi game và làm việc đa nhiệm.",
-    "stock": 4,
-    "category": "laptop",
-    "brand": "ASUS",
-    "usage": "Gaming",
-    "specs": [
-      "Core 5 210H",
-      "RTX 3050",
-      "16 GB RAM",
-      "512 GB SSD",
-      "144 Hz Display"
-    ]
-  },
-  {
-    "id": 22,
-    "name": "Laptop gaming ASUS TUF Gaming F16 FX608JH RV039W",
-    "price": 30990000,
-    "originalPrice": 33390000,
-    "image": "assets/images/asus_tuf_gaming_f16_04_l_1_7e796bbd4cad429a873f4d6545b64039_master.jpg",
-    "description": "ASUS TUF Gaming F16 FX608JH-RV039W mang lại sức mạnh chơi game vượt trội với i5-13450HX kết hợp RTX 5050, cho trải nghiệm mượt mà trên màn hình 165Hz.",
-    "stock": 7,
-    "category": "laptop",
-    "brand": "ASUS",
-    "usage": "Gaming",
-    "specs": [
-      "i5-13450HX",
-      "RTX 5050",
-      "16 GB RAM",
-      "1 TB SSD",
-      "165 Hz Display"
-    ]
-  },
-  {
-    "id": 23,
-    "name": "Tai nghe Steelseries Arctis Nova 7 Dragon Edition",
-    "price": 3990000,
-    "originalPrice": 6990000,
-    "image": "assets/images/tainghesteelseriesarctisnova7.jpg",
-    "description": "Tai nghe gaming không dây, pin 38 giờ, kết nối cùng lúc 2.4 GHz + Bluetooth, micro ClearCast Gen 2 khử ồn, thiết kế đỏ-vàng độc đáo với họa tiết rồng may mắn, thích hợp chơi game / nghe nhạc / gọi thoại.",
-    "stock": 15,
-    "category": "headset",
-    "brand": "Steelseries",
-    "specs": [
-      "Wireless",
-      "Chụp tai",
-      "USB-C Charging"
-    ]
-  },
-  {
     "id": 100,
     "name": "VGA ASUS ROG Strix GeForce RTX 5090",
     "price": 68000000,
@@ -350,6 +296,400 @@
       "192-bit Memory Interface",
       "2 Quạt Axial-tech",
       "0dB Technology"
+    ]
+  },
+  {
+    "id": 109,
+    "name": "ASUS TUF Gaming GeForce RTX 4080 SUPER 16GB",
+    "price": 31990000,
+    "originalPrice": 34990000,
+    "image": "assets/images/asus-rtx-4080s.jpg",
+    "description": "Độ bền chuẩn quân đội, tụ điện cao cấp, hoạt động bền bỉ.",
+    "stock": 40,
+    "category": "vga",
+    "brand": "ASUS",
+    "specs": [
+      "NVIDIA RTX 4080 Super",
+      "16GB GDDR6X",
+      "256-bit",
+      "Metal Backplate"
+    ]
+  },
+  {
+    "id": 110,
+    "name": "ZOTAC GAMING GeForce RTX 4070 Ti SUPER Trinity",
+    "price": 23990000,
+    "originalPrice": 25990000,
+    "image": "assets/images/zotac-rtx-4070tis.jpg",
+    "description": "Thiết kế IceStorm 2.0 làm mát hiệu quả, kích thước tối ưu cho case mid-tower.",
+    "stock": 50,
+    "category": "vga",
+    "brand": "ZOTAC",
+    "specs": [
+      "NVIDIA RTX 4070 Ti Super",
+      "16GB GDDR6X",
+      "256-bit",
+      "Spectra 2.0 RGB"
+    ]
+  },
+  {
+    "id": 111,
+    "name": "MSI Ventus 2X GeForce RTX 4070 SUPER 12GB",
+    "price": 17990000,
+    "originalPrice": 19500000,
+    "image": "assets/images/msi-rtx-4070s.jpg",
+    "description": "Thiết kế 2 quạt nhỏ gọn, phù hợp cho các bộ PC Gaming ITX hoặc mATX.",
+    "stock": 65,
+    "category": "vga",
+    "brand": "MSI",
+    "specs": [
+      "NVIDIA RTX 4070 Super",
+      "12GB GDDR6X",
+      "192-bit",
+      "Torx Fan 4.0"
+    ]
+  },
+  {
+    "id": 112,
+    "name": "Colorful iGame GeForce RTX 4060 Ti Ultra W 16GB",
+    "price": 13590000,
+    "originalPrice": 14900000,
+    "image": "assets/images/colorful-rtx-4060ti.jpg",
+    "description": "Phiên bản màu trắng phong cách Pop-art, VRAM lớn 16GB hỗ trợ tốt đồ họa AI.",
+    "stock": 30,
+    "category": "vga",
+    "brand": "Colorful",
+    "specs": [
+      "NVIDIA RTX 4060 Ti",
+      "16GB GDDR6",
+      "128-bit",
+      "White Theme"
+    ]
+  },
+  {
+    "id": 113,
+    "name": "Gigabyte Eagle GeForce RTX 4060 OC 8GB",
+    "price": 8290000,
+    "originalPrice": 9500000,
+    "image": "assets/images/gigabyte-rtx-4060.jpg",
+    "description": "Card đồ họa quốc dân thế hệ mới, chiến mượt mọi game 1080p.",
+    "stock": 120,
+    "category": "vga",
+    "brand": "Gigabyte",
+    "specs": [
+      "NVIDIA RTX 4060",
+      "8GB GDDR6",
+      "128-bit",
+      "Windforce 2X"
+    ]
+  },
+  {
+    "id": 114,
+    "name": "ASUS Dual GeForce RTX 3060 V2 OC 12GB",
+    "price": 7590000,
+    "originalPrice": 8900000,
+    "image": "assets/images/asus-rtx-3060.jpg",
+    "description": "VRAM 12GB lớn trong tầm giá, lựa chọn tốt nhất cho render video ngân sách thấp.",
+    "stock": 200,
+    "category": "vga",
+    "brand": "ASUS",
+    "specs": [
+      "NVIDIA RTX 3060",
+      "12GB GDDR6",
+      "192-bit",
+      "0dB Technology"
+    ]
+  },
+  {
+    "id": 115,
+    "name": "MSI GeForce RTX 3050 Ventus 2X XS 8GB",
+    "price": 5990000,
+    "originalPrice": 6500000,
+    "image": "assets/images/msi-rtx-3050.jpg",
+    "description": "Card đồ họa nhập môn Ray Tracing, thay thế hoàn hảo cho các dòng GTX cũ.",
+    "stock": 85,
+    "category": "vga",
+    "brand": "MSI",
+    "specs": [
+      "NVIDIA RTX 3050",
+      "8GB GDDR6",
+      "128-bit",
+      "DLSS Support"
+    ]
+  },
+  {
+    "id": 116,
+    "name": "Galax GeForce RTX 4090 SG (1-Click OC) 24GB",
+    "price": 51990000,
+    "originalPrice": 55000000,
+    "image": "assets/images/galax-rtx-4090.jpg",
+    "description": "Dòng Serious Gaming với quạt phụ gắn lưng độc đáo, hiệu năng/giá thành tốt.",
+    "stock": 12,
+    "category": "vga",
+    "brand": "Galax",
+    "specs": [
+      "NVIDIA RTX 4090",
+      "24GB GDDR6X",
+      "384-bit",
+      "Clip-on Fan"
+    ]
+  },
+  {
+    "id": 117,
+    "name": "ASUS ProArt GeForce RTX 4070 Ti SUPER 16GB",
+    "price": 26990000,
+    "originalPrice": 28990000,
+    "image": "assets/images/asus-proart-4070tis.jpg",
+    "description": "Thiết kế tối giản sang trọng, tối ưu driver Studio cho dân thiết kế đồ họa.",
+    "stock": 18,
+    "category": "vga",
+    "brand": "ASUS",
+    "specs": [
+      "NVIDIA RTX 4070 Ti Super",
+      "16GB GDDR6X",
+      "256-bit",
+      "Creator Ready"
+    ]
+  },
+  {
+    "id": 118,
+    "name": "Gigabyte Gaming OC GeForce RTX 3070 Ti 8GB",
+    "price": 11500000,
+    "originalPrice": 18500000,
+    "image": "assets/images/gigabyte-rtx-3070ti.jpg",
+    "description": "Hiệu năng 2K mạnh mẽ, phiên bản Gaming OC xung nhịp cao.",
+    "stock": 8,
+    "category": "vga",
+    "brand": "Gigabyte",
+    "specs": [
+      "NVIDIA RTX 3070 Ti",
+      "8GB GDDR6X",
+      "256-bit",
+      "RGB Fusion"
+    ]
+  },
+  {
+    "id": 119,
+    "name": "ASUS ROG Strix GeForce RTX 3080 Gundam Edition",
+    "price": 22000000,
+    "originalPrice": 35000000,
+    "image": "assets/images/asus-rtx-3080-gundam.jpg",
+    "description": "Phiên bản giới hạn Gundam, dành cho fan sưu tầm và build PC theo chủ đề.",
+    "stock": 2,
+    "category": "vga",
+    "brand": "ASUS",
+    "specs": [
+      "NVIDIA RTX 3080",
+      "10GB GDDR6X",
+      "320-bit",
+      "Limited Edition"
+    ]
+  },
+  {
+    "id": 120,
+    "name": "Inno3D GeForce GTX 1650 Twin X2 OC 4GB",
+    "price": 3590000,
+    "originalPrice": 4200000,
+    "image": "assets/images/inno3d-gtx-1650.jpg",
+    "description": "Giải pháp giá rẻ cho game Esports, không cần nguồn phụ.",
+    "stock": 150,
+    "category": "vga",
+    "brand": "Inno3D",
+    "specs": [
+      "NVIDIA GTX 1650",
+      "4GB GDDR6",
+      "128-bit",
+      "Low Profile"
+    ]
+  },
+  {
+    "id": 121,
+    "name": "PowerColor Hellhound AMD Radeon RX 7800 XT",
+    "price": 15500000,
+    "originalPrice": 16900000,
+    "image": "assets/images/powercolor-7800xt.jpg",
+    "description": "Quái vật hiệu năng 1440p từ AMD, LED mắt quỷ đặc trưng có thể đổi màu.",
+    "stock": 20,
+    "category": "vga",
+    "brand": "PowerColor",
+    "usage": "Gaming 2K High FPS",
+    "chipset": "RX 7800 XT",
+    "specs": [
+      "16GB GDDR6",
+      "256-bit Memory Interface",
+      "Dual BIOS",
+      "Amethyst LED"
+    ]
+  },
+  {
+    "id": 122,
+    "name": "MSI GeForce RTX 4080 SUPER SUPRIM X",
+    "price": 38990000,
+    "originalPrice": 42000000,
+    "image": "assets/images/msi-suprim-4080s.jpg",
+    "description": "Dòng cao cấp nhất của MSI, mặt nhôm phay xước sang trọng, tản nhiệt cực mát.",
+    "stock": 5,
+    "category": "vga",
+    "brand": "MSI",
+    "usage": "Premium Gaming/AI",
+    "chipset": "RTX 4080 Super",
+    "specs": [
+      "16GB GDDR6X",
+      "256-bit Memory Interface",
+      "Tri Frozr 3S",
+      "Diamond Logo RGB"
+    ]
+  },
+  {
+    "id": 123,
+    "name": "ASRock Intel Arc A770 Phantom Gaming D 8GB",
+    "price": 8990000,
+    "originalPrice": 9900000,
+    "image": "assets/images/asrock-a770.jpg",
+    "description": "Làn gió mới từ Intel, hiệu năng mã hóa video AV1 cực tốt cho Streamer.",
+    "stock": 30,
+    "category": "vga",
+    "brand": "ASRock",
+    "usage": "Streaming/Editing",
+    "chipset": "Intel Arc A770",
+    "specs": [
+      "8GB GDDR6",
+      "256-bit Memory Interface",
+      "XeSS AI Upscaling",
+      "Polychrome SYNC"
+    ]
+  },
+  {
+    "id": 124,
+    "name": "Gigabyte GeForce RTX 4060 Ti AERO OC 16GB",
+    "price": 14290000,
+    "originalPrice": 15500000,
+    "image": "assets/images/gigabyte-4060ti-aero.jpg",
+    "description": "Thiết kế trắng bạc hiện đại, VRAM 16GB tối ưu cho sáng tạo nội dung.",
+    "stock": 18,
+    "category": "vga",
+    "brand": "Gigabyte",
+    "usage": "Creator/White PC Build",
+    "chipset": "RTX 4060 Ti",
+    "specs": [
+      "16GB GDDR6",
+      "128-bit Memory Interface",
+      "Screen Cooling",
+      "Creator Drivers"
+    ]
+  },
+  {
+    "id": 125,
+    "name": "Sapphire PURE AMD Radeon RX 7700 XT",
+    "price": 12500000,
+    "originalPrice": 13900000,
+    "image": "assets/images/sapphire-pure-7700xt.jpg",
+    "description": "Phiên bản màu trắng tinh khôi, quạt Angular Velocity Fan Blade êm ái.",
+    "stock": 25,
+    "category": "vga",
+    "brand": "Sapphire",
+    "usage": "Gaming 1440p",
+    "chipset": "RX 7700 XT",
+    "specs": [
+      "12GB GDDR6",
+      "192-bit Memory Interface",
+      "Red LED Logo",
+      "High Polymer Capacitor"
+    ]
+  },
+  {
+    "id": 126,
+    "name": "ASUS ProArt GeForce RTX 4060 OC Edition",
+    "price": 9500000,
+    "originalPrice": 10500000,
+    "image": "assets/images/asus-proart-4060.jpg",
+    "description": "Thiết kế tối giản, thanh lịch, nhỏ gọn 2.5 slot cho các case workstation.",
+    "stock": 40,
+    "category": "vga",
+    "brand": "ASUS",
+    "usage": "Professional Design",
+    "chipset": "RTX 4060",
+    "specs": [
+      "8GB GDDR6",
+      "128-bit Memory Interface",
+      "0dB Tech",
+      "Auto-Extreme"
+    ]
+  },
+  {
+    "id": 127,
+    "name": "PNY GeForce RTX 4070 Ti SUPER XLR8 Gaming Verto",
+    "price": 24500000,
+    "originalPrice": 26000000,
+    "image": "assets/images/pny-4070tis.jpg",
+    "description": "Hệ thống LED RGB Epic-X độc đáo, hiệu năng ổn định giá tốt.",
+    "stock": 15,
+    "category": "vga",
+    "brand": "PNY",
+    "usage": "Gaming/VR",
+    "chipset": "RTX 4070 Ti Super",
+    "specs": [
+      "16GB GDDR6X",
+      "256-bit Memory Interface",
+      "VelocityX Software",
+      "EPIC-X RGB"
+    ]
+  },
+  {
+    "id": 128,
+    "name": "ZOTAC GAMING GeForce RTX 3050 Solo",
+    "price": 5200000,
+    "originalPrice": 5900000,
+    "image": "assets/images/zotac-3050-solo.jpg",
+    "description": "Thiết kế 1 quạt siêu nhỏ gọn, giải pháp nâng cấp tuyệt vời cho case ITX.",
+    "stock": 60,
+    "category": "vga",
+    "brand": "ZOTAC",
+    "usage": "Mini PC/Home Theater",
+    "chipset": "RTX 3050",
+    "specs": [
+      "8GB GDDR6",
+      "128-bit Memory Interface",
+      "Single Fan",
+      "No External Power"
+    ]
+  },
+  {
+    "id": 129,
+    "name": "Gigabyte GeForce GTX 1660 SUPER OC 6G",
+    "price": 4990000,
+    "originalPrice": 5500000,
+    "image": "assets/images/gigabyte-1660s.jpg",
+    "description": "Huyền thoại phân khúc tầm trung, vẫn chiến tốt các game eSports hiện nay.",
+    "stock": 90,
+    "category": "vga",
+    "brand": "Gigabyte",
+    "usage": "Esports Gaming",
+    "chipset": "GTX 1660 Super",
+    "specs": [
+      "6GB GDDR6",
+      "192-bit Memory Interface",
+      "Windforce 2X",
+      "Protection Backplate"
+    ]
+  },
+  {
+    "id": 130,
+    "name": "ASUS Dual Radeon RX 6500 XT OC Edition",
+    "price": 4200000,
+    "originalPrice": 4800000,
+    "image": "assets/images/asus-rx6500xt.jpg",
+    "description": "Giải pháp tiết kiệm nhất để chơi game 1080p settings trung bình.",
+    "stock": 55,
+    "category": "vga",
+    "brand": "ASUS",
+    "usage": "Entry Level Gaming",
+    "chipset": "RX 6500 XT",
+    "specs": [
+      "4GB GDDR6",
+      "64-bit Memory Interface",
+      "IP5X Dust Resistance",
+      "Compact Design"
     ]
   },
   {
@@ -737,5 +1077,51 @@
       "165 Degree Recline",
       "Lifetime Frame Warranty"
     ]
+  },
+  {
+    "id": 21,
+    "name": "Laptop gaming ASUS TUF Gaming F16 FX607VJ RL034W",
+    "price": 23490000,
+    "originalPrice": 24490000,
+    "image": "assets/images/ASUS-TUF-Gaming-F16-FX607VJ-RL034W.jpg",
+    "description": "ASUS TUF Gaming F16 FX607VJ RL034W có hiệu năng mạnh với CPU Intel Core 5 210H + GPU NVIDIA GeForce RTX 3050, RAM 16 GB + SSD 512 GB, màn hình 144 Hz, phù hợp chơi game và làm việc đa nhiệm.",
+    "stock": 4,
+    "category": "laptop",
+    "brand": "ASUS",
+    "usage": "Gaming",
+    "specs": [
+      "Core 5 210H",
+      "RTX 3050",
+      "16 GB RAM", 
+      "512 GB SSD",
+      "144 Hz Display"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Laptop gaming ASUS TUF Gaming F16 FX608JH RV039W",
+    "price": 30990000,
+    "originalPrice": 33390000,
+    "image": "assets/images/asus_tuf_gaming_f16_04_l_1_7e796bbd4cad429a873f4d6545b64039_master.jpg",
+    "description": "ASUS TUF Gaming F16 FX608JH-RV039W mang lại sức mạnh chơi game vượt trội với i5-13450HX kết hợp RTX 5050, cho trải nghiệm mượt mà trên màn hình 165Hz.",
+    "stock": 7,
+    "category": "laptop",
+    "brand": "ASUS",
+    "usage": "Gaming",
+    "specs": [
+      "i5-13450HX",
+      "RTX 5050",
+      "16 GB RAM",
+      "1 TB SSD",
+      "165 Hz Display"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Tai nghe Steelseries Arctis Nova 7 Dragon Edition",
+    "price": 3990000,
+    "originalPrice": 6990000,
+    "image": "assets/images/tainghesteelseriesarctisnova7.jpg",
+    "description": "Tai nghe gaming không dây, pin 38 giờ, kết nối cùng lúc 2.4 GHz + Bluetooth, micro ClearCast Gen 2 khử ồn, thiết kế đỏ-vàng độc đáo với họa tiết rồng may mắn, thích hợp chơi game / nghe nhạc / gọi thoại."
   }
 ]

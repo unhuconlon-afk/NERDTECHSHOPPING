@@ -742,13 +742,39 @@ function initSearchBar() {
     }
 
     const lowerQuery = query.toLowerCase();
+    const keywords = lowerQuery.split(' ').filter(k => k);
+    
+    const categories = ['laptop', 'pc', 'phone', 'vga', 'cpu', 'mainboard', 'ram', 'ssd', 'monitor', 'mouse', 'keyboard', 'headset', 'chair'];
+    let detectedCategory = '';
+    const remainingKeywords = [];
+
+    keywords.forEach(k => {
+      if (categories.includes(k)) {
+        detectedCategory = k;
+      } else {
+        remainingKeywords.push(k);
+      }
+    });
+
+    const searchKeyword = remainingKeywords.join(' ');
+
     const filtered = allProducts.filter((product) => {
-      const nameMatch = product.name.toLowerCase().includes(lowerQuery);
-      const categoryMatch = product.category.toLowerCase().includes(lowerQuery);
-      const specsMatch = Array.isArray(product.specs) 
-        ? product.specs.some((spec) => spec.toLowerCase().includes(lowerQuery))
-        : false;
-      return nameMatch || categoryMatch || specsMatch;
+      let matchesKeyword = true;
+      if (searchKeyword) {
+        const nameMatch = product.name.toLowerCase().includes(searchKeyword);
+        const specsMatch = Array.isArray(product.specs)
+          ? product.specs.some((spec) => spec.toLowerCase().includes(searchKeyword))
+          : false;
+        const brandMatch = product.brand ? product.brand.toLowerCase().includes(searchKeyword) : false;
+        matchesKeyword = nameMatch || specsMatch || brandMatch;
+      }
+
+      let matchesCategory = true;
+      if (detectedCategory) {
+        matchesCategory = product.category.toLowerCase() === detectedCategory;
+      }
+
+      return matchesKeyword && matchesCategory;
     }).slice(0, 6);
 
     if (filtered.length === 0) {
@@ -931,25 +957,48 @@ async function initSearchPage() {
     const sortBy = sortBySelect?.value || "default";
 
     const lowerKeyword = keyword.toLowerCase();
+    const keywords = lowerKeyword.split(' ').filter(k => k);
+    
+    const categories = ['laptop', 'pc', 'phone', 'vga', 'cpu', 'mainboard', 'ram', 'ssd', 'monitor', 'mouse', 'keyboard', 'headset', 'chair'];
+    let detectedCategory = '';
+    const remainingKeywords = [];
+
+    keywords.forEach(k => {
+      if (categories.includes(k)) {
+        detectedCategory = k;
+      } else {
+        remainingKeywords.push(k);
+      }
+    });
+
+    const searchKeyword = remainingKeywords.join(' ');
 
     let filtered = allProducts.filter((product) => {
-      const nameMatch = product.name.toLowerCase().includes(lowerKeyword);
-      const categoryMatch = product.category.toLowerCase().includes(lowerKeyword);
-      const specsMatch = Array.isArray(product.specs)
-        ? product.specs.some((spec) => spec.toLowerCase().includes(lowerKeyword))
-        : false;
-      const matchesKeyword = lowerKeyword === "" || nameMatch || categoryMatch || specsMatch;
+      let matchesKeyword = true;
+      if (searchKeyword) {
+        const nameMatch = product.name.toLowerCase().includes(searchKeyword);
+        const specsMatch = Array.isArray(product.specs)
+          ? product.specs.some((spec) => spec.toLowerCase().includes(searchKeyword))
+          : false;
+        const brandMatch = product.brand ? product.brand.toLowerCase().includes(searchKeyword) : false;
+        matchesKeyword = nameMatch || specsMatch || brandMatch;
+      }
 
       const matchesPrice = product.price >= minPrice && product.price <= maxPrice;
       
-      const matchesCategory =
+      let matchesCategory = true;
+      if (detectedCategory) {
+        matchesCategory = product.category.toLowerCase() === detectedCategory;
+      } else {
+        matchesCategory =
         selectedCategories.length === 0 || selectedCategories.includes(product.category);
+      }
       
       const matchesBrand =
         selectedBrands.length === 0 || selectedBrands.includes(product.brand?.toLowerCase());
 
       const matchesUsage =
-        selectedUsages.length === 0 || selectedUsages.includes(product.usage);
+        selectedUsages.length === 0 || selectedUsages.some(usage => product.usage?.toLowerCase().includes(usage.toLowerCase()));
 
       const matchesStock = !inStockOnly || product.stock > 0;
 
@@ -1051,6 +1100,32 @@ function setupResponsiveSidebar() {
   window.addEventListener('resize', moveSidebar);
 }
 
+function initCheckoutPage() {
+  const checkoutForm = document.querySelector(".checkout-form");
+  if (!checkoutForm) return;
+
+  checkoutForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const address = document.getElementById("address").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+
+    if (!name || !address || !phone) {
+      alert("Please fill out all fields.");
+      return;
+    }
+
+    // Clear the cart
+    saveCart([]);
+
+    // Display thank you message
+    const mainContent = document.querySelector(".page-main");
+    if (mainContent) {
+      mainContent.innerHTML = "<h1>Thank you for your order!</h1>";
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   updateCartCount();
   updateUserNav();
@@ -1065,5 +1140,6 @@ document.addEventListener("DOMContentLoaded", () => {
   initProductDetailPage();
   initCartPage();
   initAuthForms();
+  initCheckoutPage();
   setupResponsiveSidebar();
 });
