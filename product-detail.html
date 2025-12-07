@@ -9,55 +9,62 @@
 </head>
 <body>
     <header class="site-header">
-        <div class="container header-inner">
-          <button class="hamburger-menu" id="hamburgerMenu">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-          <div class="logo">
-            <a href="index.html">NERD<span>TechStore</span></a>
-          </div>
-          <div class="search-container">
-            <input 
-              type="text" 
-              id="searchInput" 
-              class="search-input" 
-              placeholder="Bạn tìm gì hôm nay?"
-              autocomplete="off"
-            />
-            <div id="searchResults" class="search-results"></div>
-          </div>
-          <nav class="main-nav">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="shop.html">Shop</a></li>
-              <li><a href="sales.html">Sales</a></li>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="register.html">Register</a></li>
-              <li class="cart-link">
-                <a href="cart.html">
-                  Cart
-                  <span id="cart-count" class="cart-count">0</span>
-                </a>
-              </li>
-            </ul>
-          </nav>
+      <div class="container header-inner">
+        <button class="hamburger-menu" id="hamburgerMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="logo">
+          <a href="index.html">NERD<span>TechStore</span></a>
         </div>
-        <div class="mobile-drawer" id="mobileDrawer">
-          <div class="drawer-header">
-            <button class="drawer-close" id="drawerClose">✕</button>
-          </div>
-          <nav class="drawer-nav">
-            <a href="index.html" class="drawer-link">Home</a>
-            <a href="shop.html" class="drawer-link">Shop</a>
-            <a href="sales.html" class="drawer-link">Sales</a>
-            <a href="login.html" class="drawer-link">Login</a>
-            <a href="register.html" class="drawer-link">Register</a>
-          </nav>
+        <div class="search-container" id="searchContainer">
+          <input 
+            type="text" 
+            id="searchInput" 
+            class="search-input" 
+            placeholder="Bạn tìm gì hôm nay?"
+            autocomplete="off"
+          />
+          <div id="searchResults" class="search-results"></div>
         </div>
-        <div class="mobile-overlay" id="mobileOverlay"></div>
-      </header>
+        <button id="advancedSearchBtn" class="advanced-search-btn" title="Advanced search">Tìm Kiếm Nâng Cao</button>
+        <button class="mobile-search-toggle" id="mobileSearchToggle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+        </button>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="sales.html">Sales</a></li>
+            <li class="cart-link">
+              <a href="cart.html">
+                Cart
+                <span id="cart-count" class="cart-count">0</span>
+              </a>
+            </li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mobile-drawer" id="mobileDrawer">
+        <div class="drawer-header">
+          <button class="drawer-close" id="drawerClose">✕</button>
+        </div>
+        <nav class="drawer-nav">
+          <a href="index.html" class="drawer-link">Home</a>
+          <a href="shop.html" class="drawer-link">Shop</a>
+          <a href="sales.html" class="drawer-link">Sales</a>
+          <a href="login.html" class="drawer-link">Login</a>
+          <a href="register.html" class="drawer-link">Register</a>
+        </nav>
+      </div>
+      <div class="mobile-overlay" id="mobileOverlay"></div>
+    </header>
 
     <main class="container page-main" id="product-detail-page">
         <!-- Breadcrumbs -->

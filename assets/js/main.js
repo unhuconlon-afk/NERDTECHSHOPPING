@@ -71,6 +71,12 @@ function addToCart(productId, quantity = 1) {
   saveCart(cart);
 }
 
+function removeFromCart(productId) {
+  let cart = getCart();
+  cart = cart.filter(item => item.id !== productId);
+  saveCart(cart);
+}
+
 function updateCartCount() {
   const cart = getCart();
   const count = cart.reduce((sum, item) => sum + (item.quantity || 0), 0);
@@ -78,6 +84,11 @@ function updateCartCount() {
   if (el) {
     el.textContent = String(count);
   }
+}
+
+function clearCart() {
+  saveCart([]);
+  initCartPage();
 }
 
 // Rendering helpers
@@ -569,27 +580,88 @@ function initCartPage() {
   const container = document.getElementById("cart-items");
   if (!container) return;
 
+  const clearCartBtn = document.getElementById('clear-cart-btn');
+  if (clearCartBtn) {
+    clearCartBtn.addEventListener('click', clearCart);
+  }
+
   const cart = getCart();
   if (cart.length === 0) {
-    container.textContent = "Your cart is empty.";
+    container.innerHTML = "<p>Your cart is empty.</p>"; // Use innerHTML for consistent rendering
     const totalEl = document.getElementById("cart-total");
-    if (totalEl) totalEl.textContent = "0₫";
+    if (totalEl) totalEl.textContent = formatCurrency(0);
+    
+    // Hide buttons if cart is empty
+    const checkoutButton = document.querySelector('a[href="checkout.html"]');
+    if (checkoutButton) checkoutButton.style.display = 'none';
+    if (clearCartBtn) clearCartBtn.style.display = 'none';
+    
     return;
+  } else {
+    // Ensure buttons are visible if cart is not empty
+    const checkoutButton = document.querySelector('a[href="checkout.html"]');
+    if (checkoutButton) checkoutButton.style.display = 'inline-block';
+    if (clearCartBtn) clearCartBtn.style.display = 'inline-block';
   }
 
   fetchProducts().then((products) => {
-    container.innerHTML = "";
+    container.innerHTML = ""; // Clear previous content
     let total = 0;
+    
+    // Create table structure
+    const table = document.createElement('table');
+    table.className = 'cart-table';
+    table.innerHTML = `
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    `;
+    const tbody = table.querySelector('tbody');
+
     cart.forEach((item) => {
       const product = products.find((p) => p.id === item.id);
       if (!product) return;
-      const row = document.createElement("div");
-      row.className = "cart-row";
+
       const lineTotal = product.price * item.quantity;
       total += lineTotal;
-      row.textContent = `${product.name} x ${item.quantity} = ${formatCurrency(lineTotal)}`;
-      container.appendChild(row);
+
+      const row = document.createElement("tr");
+      row.className = "cart-item-row";
+      row.innerHTML = `
+        <td class="cart-item-product">
+          <img src="${Array.isArray(product.image) ? product.image[0] : product.image}" alt="${product.name}" class="cart-item-image">
+          <span>${product.name}</span>
+        </td>
+        <td class="cart-item-quantity">${item.quantity}</td>
+        <td class="cart-item-price">${formatCurrency(product.price)}</td>
+        <td class="cart-item-total">${formatCurrency(lineTotal)}</td>
+        <td class="cart-item-remove">
+          <button class="remove-item-btn" data-product-id="${product.id}">&times;</button>
+        </td>
+      `;
+      
+      tbody.appendChild(row);
     });
+
+    container.appendChild(table);
+
+    // Add event listeners to remove buttons
+    container.querySelectorAll('.remove-item-btn').forEach(button => {
+      button.addEventListener('click', (event) => {
+        const productId = Number(event.target.dataset.productId);
+        removeFromCart(productId);
+        initCartPage();
+      });
+    });
+
     const totalEl = document.getElementById("cart-total");
     if (totalEl) totalEl.textContent = formatCurrency(total);
   });
