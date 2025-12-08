@@ -421,7 +421,7 @@ async function initProductDetailPage() {
     localStorage.setItem("recentlyViewed", JSON.stringify(trimmedList));
 
     // --- Populate Page Elements ---
-    document.title = `PC Store - ${product.name}`;
+    document.title = `NERDTechStore - ${product.name}`;
     
     // Breadcrumbs
     const bcCategory = document.getElementById("bc-category");

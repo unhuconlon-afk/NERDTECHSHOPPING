@@ -870,89 +870,11 @@ img {
 }
 
 /* Cart & Checkout & Auth */
-.cart-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-  font-size: 0.95rem;
-}
-
-.cart-table th,
-.cart-table td {
-  padding: 12px 15px;
-  text-align: left;
-  border-bottom: 1px solid #ececec;
-  vertical-align: middle;
-}
-
-.cart-table th {
-  background-color: #f8f8f8;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #555;
-}
-
-.cart-item-product {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.cart-item-product span {
-  font-weight: 600;
-}
-
-.cart-item-image {
-  width: 65px;
-  height: 65px;
-  object-fit: cover;
-  border-radius: 4px;
-  border: 1px solid #ececec;
-}
-
-.cart-item-quantity {
-  text-align: center;
-}
-
-.cart-item-price,
-.cart-item-total {
-  font-weight: 600;
-  color: #333;
-}
-
-.cart-item-remove {
-  text-align: center;
-}
-
-.remove-item-btn {
-  background: none;
-  border: 1px solid #e0e0e0;
-  color: #e00000;
-  font-size: 1.1rem;
-  cursor: pointer;
-  padding: 0;
-  line-height: 1;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  transition: background-color 0.2s, color 0.2s;
-}
-
-.remove-item-btn:hover {
-  background-color: #e00000;
-  color: #ffffff;
-}
-
 .cart-summary {
-  margin-top: 20px;
-  text-align: right;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
-
-.cart-summary span {
-  color: #e00000;
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
 }
 
 .checkout-form,
@@ -1769,22 +1691,3 @@ body .mobile-drawer .drawer-header {
 body .mobile-drawer .drawer-nav {
   padding: 0;
 }
-
-.btn-danger {
-  display: inline-block;
-  padding: 10px 20px;
-  border-radius: 4px;
-  background-color: #dc3545;
-  color: #ffffff;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn-danger:hover {
-  background-color: #c82333;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
